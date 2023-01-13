@@ -20,10 +20,13 @@
     "antd": "^5.1.4",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.7",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.1.1",
     "jotai": "^1.13.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-i18next": "^12.1.4",
     "react-icomoon": "^2.5.4",
     "react-router-dom": "^6.6.2",
     "umi-request": "^1.4.0"
