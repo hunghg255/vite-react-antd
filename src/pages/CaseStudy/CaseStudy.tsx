@@ -1,14 +1,14 @@
 import { Helmet } from 'react-helmet';
 
-const Notification = () => {
+const CaseStudy = () => {
   return (
     <>
       <Helmet>
-        <title>Notification</title>
+        <title>CaseStudy</title>
       </Helmet>
-      <h1>Hello Notification</h1>
+      <h1>Hello CaseStudy</h1>
     </>
   );
 };
 
-export default Notification;
+export default CaseStudy;

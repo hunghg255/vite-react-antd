@@ -3,11 +3,13 @@ import react from '@vitejs/plugin-react';
 import EnvironmentPlugin from 'vite-plugin-environment';
 import checker from 'vite-plugin-checker';
 import * as path from 'path';
+import { antdDayjs } from 'antd-dayjs-vite-plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
+    antdDayjs(),
     EnvironmentPlugin('all'),
     //  resolve({ "react-codemirror2": `
     //       const UnControlled = {};
