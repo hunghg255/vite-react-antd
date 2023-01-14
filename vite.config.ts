@@ -21,6 +21,9 @@ export default defineConfig({
       typescript: true,
     }),
   ],
+  css: {
+    devSourcemap: true,
+  },
   optimizeDeps: {
     include: ['react'],
   },
@@ -28,6 +31,7 @@ export default defineConfig({
     commonjsOptions: {
       include: [/node_modules/],
     },
+    // sourcemap: true, // check analyze
   },
   resolve: {
     alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
