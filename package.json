@@ -13,7 +13,8 @@
     "lint": "eslint --ext .ts,.tsx src --color",
     "format": "prettier --write \"./src/**/*.{ts,tsx,json}\"",
     "prepare": "husky install",
-    "generate:icon-type": "node ./scripts/generateTypeIcon.js"
+    "generate:icon-type": "node ./scripts/generateTypeIcon.js",
+    "analyze": "source-map-explorer 'dist/assets/*.js'"
   },
   "dependencies": {
     "ahooks": "^3.7.4",
