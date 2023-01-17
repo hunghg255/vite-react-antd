@@ -2,6 +2,7 @@ import { ROUTE_PATH } from '@/routes/route.constant';
 import { getAccessToken } from '@/store/auth/useAuth';
 import { useProfile } from '@/store/profile/useProfile';
 import { useMount } from 'ahooks';
+import { Suspense } from 'react';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 const AppLayout = () => {
@@ -17,9 +18,9 @@ const AppLayout = () => {
   });
 
   return (
-    <>
+    <Suspense fallback={null}>
       <Outlet />
-    </>
+    </Suspense>
   );
 };
 
