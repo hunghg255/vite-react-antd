@@ -14,7 +14,7 @@
     "format": "prettier --write \"./src/**/*.{ts,tsx,json}\"",
     "prepare": "husky install",
     "generate:icon-type": "node ./scripts/generateTypeIcon.js",
-    "analyze": "source-map-explorer 'dist/assets/*.js'"
+    "analyze": "npm run lint && tsc && vite build --mode=analyze && source-map-explorer 'dist/assets/*.js'"
   },
   "dependencies": {
     "ahooks": "^3.7.4",
