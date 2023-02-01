@@ -1,7 +1,12 @@
+import { atom, useAtom } from 'jotai';
 import React from 'react';
 import { Helmet } from 'react-helmet';
+const countAtom = atom(0);
+countAtom.debugLabel = 'Count';
 
 const Requirement = () => {
+  const [count, setCount] = useAtom(countAtom);
+
   return (
     <>
       <Helmet>
@@ -9,6 +14,8 @@ const Requirement = () => {
       </Helmet>
 
       <h1>Hello Requirement</h1>
+      {count}
+      <button onClick={() => setCount(count + 1)}>Click</button>
     </>
   );
 };
