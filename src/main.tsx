@@ -7,9 +7,14 @@ import 'antd/dist/reset.css';
 import './styles/globals.scss';
 
 import './i18n';
+import { Provider } from 'jotai';
+import { DebugAtoms } from './components/DebugAtoms/DebugAtoms';
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <ErrorBoundary>
-    <App />
+    <Provider>
+      <DebugAtoms />
+      <App />
+    </Provider>
   </ErrorBoundary>,
 );
