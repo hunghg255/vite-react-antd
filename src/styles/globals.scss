@@ -1,0 +1,19 @@
+@import 'antd/dist/antd.css';
+@import './reset.scss';
+@import './font.scss';
+@import './color.scss';
+@import './space.scss';
+@import './text.scss';
+@import './custom-antd.scss';
+
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  text-rendering: optimizeSpeed;
+}

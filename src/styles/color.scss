@@ -1,0 +1,149 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+
+  --primary-1: #00a652;
+  --primary-2: #33b875;
+  --primary-3: #66ca97;
+  --primary-4: #99dbba;
+  --primary-5: #d9f2e5;
+
+  --secondary-1: #cd3a64;
+  --secondary-2: #f05984;
+  --secondary-3: #f69bb5;
+  --secondary-4: #f9bdce;
+  --secondary-5: #fde6ed;
+
+  --neutral-1: #2f2f2f;
+  --neutral-2: #494949;
+  --neutral-3: #7b7b7b;
+  --neutral-4: #b8b8b8;
+  --neutral-5: #d9d9d9;
+  --neutral-6: #f6f6f6;
+  --neutral-7: #ffffff;
+
+  --danger-1: #f41515;
+  --danger-2: #ff3b3b;
+  --danger-3: #ff6d6d;
+  --danger-4: #ffa5a5;
+  --danger-5: #ffe9e9;
+
+  --link-1: #0066ff;
+  --link-2: #3e7bfa;
+  --link-3: #719efb;
+  --link-4: #a9c4fc;
+  --link-5: #d6e3ff;
+}
+
+.primary-1 {
+  color: var(--primary-1);
+}
+.primary-2 {
+  color: var(--primary-2);
+}
+.primary-3 {
+  color: var(--primary-3);
+}
+.primary-4 {
+  color: var(--primary-4);
+}
+.primary-5 {
+  color: var(--primary-5);
+}
+
+.secondary-1 {
+  color: var(--secondary-1);
+}
+.secondary-2 {
+  color: var(--secondary-2);
+}
+.secondary-3 {
+  color: var(--secondary-3);
+}
+.secondary-4 {
+  color: var(--secondary-4);
+}
+.secondary-5 {
+  color: var(--secondary-5);
+}
+
+.danger-1 {
+  color: var(--danger-1);
+}
+.danger-2 {
+  color: var(--danger-2);
+}
+.danger-3 {
+  color: var(--danger-3);
+}
+.danger-4 {
+  color: var(--danger-4);
+}
+.danger-5 {
+  color: var(--danger-5);
+}
+
+.neutral-1 {
+  color: var(--neutral-1);
+}
+
+.neutral-2 {
+  color: var(--neutral-2);
+}
+
+.neutral-3 {
+  color: var(--neutral-3);
+}
+
+.neutral-4 {
+  color: var(--neutral-4);
+}
+.neutral-5 {
+  color: var(--neutral-5);
+}
+.neutral-6 {
+  color: var(--neutral-6);
+}
+.neutral-7 {
+  color: var(--neutral-7);
+}
+
+.link-1 {
+  color: var(--link-1);
+}
+.link-2 {
+  color: var(--link-2);
+}
+.link-3 {
+  color: var(--link-3);
+}
+.link-4 {
+  color: var(--link-4);
+}
+.link-5 {
+  color: var(--link-5);
+}
+
+.cwhite {
+  color: var(--white);
+}
+
+.cblack {
+  color: var(--black);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-gray-4 {
+  background-color: var(--neutral-4);
+}
+
+.danger {
+  color: var(--danger-1);
+}
+
+.link {
+  color: var(--link-1);
+}

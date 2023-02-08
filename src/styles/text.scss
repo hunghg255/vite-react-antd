@@ -1,0 +1,75 @@
+.h1-bold {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+}
+.h1-regular {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+}
+.h2-bold {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+}
+.h2-regular {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+}
+.h3-bold {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.h3-regular {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+.body-bold {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+.body-regular {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+.body-2-bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.body-2-regular {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.body-3-bold {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+.body-3-regular {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.body-4-bold {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+}
+.body-4-regular {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
