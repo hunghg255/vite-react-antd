@@ -21,6 +21,12 @@ export const getAccessToken = () => {
   return data?.token || '';
 };
 
+export const getRefreshToken = () => {
+  const data: any = getAuthLocalStorage();
+
+  return data?.refreshToken || '';
+};
+
 export const useAuth = () => {
   const navigate = useNavigate();
 
