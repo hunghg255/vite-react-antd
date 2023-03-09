@@ -1,6 +1,7 @@
-import { getAccessToken, getRefreshToken } from '@/store/auth/useAuth';
 import TokenManager, { injectBearer } from 'brainless-token-manager';
 import { extend } from 'umi-request';
+
+import { getAccessToken, getRefreshToken } from '@/store/auth/useAuth';
 
 const REQ_TIMEOUT = 25 * 1000;
 
@@ -45,4 +46,4 @@ const privateRequest = async (request: any, suffixUrl: string, configs?: any) =>
   return request(suffixUrl, injectBearer(token, configs));
 };
 
-export { request, privateRequest };
+export { privateRequest, request };

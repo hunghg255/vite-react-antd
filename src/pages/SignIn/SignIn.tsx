@@ -1,7 +1,8 @@
-import { useAuth } from '@/store/auth/useAuth';
 import { Button } from 'antd';
 import React from 'react';
 import { Helmet } from 'react-helmet';
+
+import { useAuth } from '@/store/auth/useAuth';
 
 const SignIn = () => {
   const { onLogin } = useAuth();

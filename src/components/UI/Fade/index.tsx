@@ -1,5 +1,6 @@
-import { useFadeEffect, _popoverStyles, _popoverVisibleStyles } from '@/hooks/useFadeEffect';
 import React from 'react';
+
+import { _popoverStyles, _popoverVisibleStyles, useFadeEffect } from '@/hooks/useFadeEffect';
 
 const Fade = ({ children, visible }: { children: React.ReactNode; visible: boolean }) => {
   const [_isTransitioning, shouldBeVisible, refModal] = useFadeEffect(visible);
