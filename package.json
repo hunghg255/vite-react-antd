@@ -18,8 +18,7 @@
   },
   "dependencies": {
     "ahooks": "^3.7.4",
-    "antd": "^5.1.4",
-    "antd-dayjs-vite-plugin": "^1.2.2",
+    "antd": "^5.4.0",
     "brainless-token-manager": "^1.2.6",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.7",
