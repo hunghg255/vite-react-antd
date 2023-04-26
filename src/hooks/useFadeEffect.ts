@@ -46,10 +46,10 @@ export const useFadeEffect = (visible: boolean) => {
 
   React.useEffect(() => {
     return () => {
-      if (hiddenRef.current != null) {
+      if (hiddenRef.current !== undefined) {
         clearTimeout(hiddenRef.current);
       }
-      if (showRef.current != null) {
+      if (showRef.current !== undefined) {
         window.cancelAnimationFrame(showRef.current);
       }
     };
@@ -59,15 +59,15 @@ export const useFadeEffect = (visible: boolean) => {
     setState({
       type: 'finish',
     });
-    if (hiddenRef.current != null) {
+    if (hiddenRef.current !== undefined) {
       clearTimeout(hiddenRef.current);
-      hiddenRef.current = null;
+      hiddenRef.current = undefined;
     }
   }, []);
 
   const handleStart = React.useCallback(
     (visible: boolean) => {
-      if (showRef.current != null) {
+      if (showRef.current !== undefined) {
         window.cancelAnimationFrame(showRef.current);
       }
 
@@ -77,9 +77,9 @@ export const useFadeEffect = (visible: boolean) => {
           type: 'start',
         });
 
-        showRef.current = null;
+        showRef.current = undefined;
 
-        if (hiddenRef.current != null) {
+        if (hiddenRef.current !== undefined) {
           clearTimeout(hiddenRef.current);
           hiddenRef.current = setTimeout(handleFinish, TIMEOUT);
         }
@@ -89,7 +89,7 @@ export const useFadeEffect = (visible: boolean) => {
   );
 
   React.useEffect(() => {
-    if (visibleRef.current !== visible && (!visible || ref.current != null)) {
+    if (visibleRef.current !== visible && (!visible || ref.current !== undefined)) {
       handleStart(visible);
       visibleRef.current = visible;
     }
@@ -109,11 +109,9 @@ export const useFadeEffect = (visible: boolean) => {
         if (visibleRef.current) {
           handleStart(true);
         }
-      } else if (_elm !== null) {
-        if (_elm.removeEventListener !== null) {
-          _elm.removeEventListener('transitionend', handleFinish);
-          _elm.removeEventListener('webkitTransitionEnd', handleFinish);
-        }
+      } else if (_elm !== null && _elm.removeEventListener !== null) {
+        _elm.removeEventListener('transitionend', handleFinish);
+        _elm.removeEventListener('webkitTransitionEnd', handleFinish);
       }
     },
     [handleFinish, handleStart],

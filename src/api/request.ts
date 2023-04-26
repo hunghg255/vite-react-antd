@@ -1,3 +1,4 @@
+/* eslint-disable require-await */
 import TokenManager, { injectBearer } from 'brainless-token-manager';
 import { extend } from 'umi-request';
 
@@ -32,16 +33,14 @@ const tokenManager = new TokenManager({
       refresh_token: '',
     };
   },
-  onRefreshTokenSuccess: ({ token, refresh_token }) => {},
+  onRefreshTokenSuccess: ({ token }) => {},
   onInvalidRefreshToken: async () => {
     // Logout
   },
 });
 
 const privateRequest = async (request: any, suffixUrl: string, configs?: any) => {
-  const token: string = configs?.token
-    ? configs?.token
-    : ((await tokenManager.getToken()) as string);
+  const token: string = configs?.token ?? ((await tokenManager.getToken()) as string);
 
   return request(suffixUrl, injectBearer(token, configs));
 };

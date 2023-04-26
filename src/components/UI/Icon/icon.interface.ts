@@ -108,7 +108,7 @@ export default interface IIconProps {
     | 'Upload'
     | 'Wallet'
     | 'Work'
-    | (string & {});
+    | (string & Record<string, never>);
   color?: string;
   size?: string | number;
   className?: string;

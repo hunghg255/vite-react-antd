@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
           {
             path: ROUTE_PATH.SIGN_IN,
             element: (
-              <Suspense fallback={null}>
+              <Suspense fallback={undefined}>
                 <SignIn />
               </Suspense>
             ),
@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
           {
             path: ROUTE_PATH.REQUIREMENT,
             element: (
-              <Suspense fallback={null}>
+              <Suspense fallback={undefined}>
                 <Requirement />
               </Suspense>
             ),
@@ -47,7 +47,7 @@ export const router = createBrowserRouter([
           {
             path: ROUTE_PATH.REQUIREMENT_DETAIL,
             element: (
-              <Suspense fallback={null}>
+              <Suspense fallback={undefined}>
                 <RequirementDetail />
               </Suspense>
             ),
@@ -55,7 +55,7 @@ export const router = createBrowserRouter([
           {
             path: ROUTE_PATH.CLIENTS,
             element: (
-              <Suspense fallback={null}>
+              <Suspense fallback={undefined}>
                 <Clients />
               </Suspense>
             ),
@@ -63,7 +63,7 @@ export const router = createBrowserRouter([
           {
             path: ROUTE_PATH.CLIENTS_DETAIL,
             element: (
-              <Suspense fallback={null}>
+              <Suspense fallback={undefined}>
                 <ClientsDetail />
               </Suspense>
             ),
@@ -71,7 +71,7 @@ export const router = createBrowserRouter([
           {
             path: ROUTE_PATH.CASE_STUDY,
             element: (
-              <Suspense fallback={null}>
+              <Suspense fallback={undefined}>
                 <CaseStudy />
               </Suspense>
             ),
@@ -79,7 +79,7 @@ export const router = createBrowserRouter([
           {
             path: ROUTE_PATH.NOTIFICATION,
             element: (
-              <Suspense fallback={null}>
+              <Suspense fallback={undefined}>
                 <Notification />
               </Suspense>
             ),

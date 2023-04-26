@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 const AuthLayout = () => {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={undefined}>
       <h1>Auth Header</h1>
       <Outlet />
     </Suspense>

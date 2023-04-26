@@ -4,5 +4,6 @@ import { useAtomsDevtools } from 'jotai-devtools';
 // https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
 export const DebugAtoms = () => {
   useAtomsDevtools('root');
-  return null;
+
+  return <></>;
 };

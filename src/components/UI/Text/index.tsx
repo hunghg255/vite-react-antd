@@ -69,7 +69,7 @@ const Text: React.FC<TextProps> = ({
       className: classes,
       onClick,
     },
-    React.createElement(React.Fragment, null, children),
+    React.createElement(React.Fragment, undefined, children),
   );
 };
 

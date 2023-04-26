@@ -13,13 +13,17 @@ const AppLayout = () => {
 
   useMount(() => {
     const isLogin = getAccessToken();
-    if (!isLogin) return navigate(ROUTE_PATH.SIGN_IN);
+    if (!isLogin) {
+      return navigate(ROUTE_PATH.SIGN_IN);
+    }
 
-    if (location.pathname === '/') navigate(ROUTE_PATH.REQUIREMENT);
+    if (location.pathname === '/') {
+      navigate(ROUTE_PATH.REQUIREMENT);
+    }
   });
 
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={undefined}>
       <Outlet />
     </Suspense>
   );

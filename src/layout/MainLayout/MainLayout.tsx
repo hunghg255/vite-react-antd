@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 
 const MainLayout = () => {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={undefined}>
       <h1>Main Header</h1>
 
       <Outlet />

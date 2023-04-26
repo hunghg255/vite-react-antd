@@ -10,7 +10,7 @@ import App from './App';
 import { DebugAtoms } from './components/DebugAtoms/DebugAtoms';
 import ErrorBoundary from './components/ErrorBoundary';
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+ReactDOM.createRoot(document.querySelector('#root') as HTMLElement).render(
   <ErrorBoundary>
     <Provider>
       <DebugAtoms />
