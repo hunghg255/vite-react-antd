@@ -1,5 +1,6 @@
-import { Button } from 'antd';
 import React from 'react';
+
+import { Button } from 'antd';
 import { Helmet } from 'react-helmet';
 
 import { useAuth } from '@/store/auth/useAuth';

@@ -1,5 +1,6 @@
-import { useMount } from 'ahooks';
 import { Suspense } from 'react';
+
+import { useMount } from 'ahooks';
 import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
 import { ROUTE_PATH } from '@/routes/route.constant';

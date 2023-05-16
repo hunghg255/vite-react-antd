@@ -1,4 +1,8 @@
 {
+  "env": {
+    "es2020": true,
+    "browser": true
+  },
   "parser": "@typescript-eslint/parser",
   "extends": [
     "react-app",
@@ -19,7 +23,7 @@
       "typescript": {}
     }
   },
-  "plugins": ["@typescript-eslint", "simple-import-sort", "import"],
+  "plugins": ["@typescript-eslint", "import"],
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/display-name": "off",
@@ -28,12 +32,45 @@
     "no-console": 1,
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": "error",
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
     // Enforce import order
-    // "import/order": ["error"],
+    "import/order": [
+      2,
+      {
+        "groups": ["builtin", "external", "internal"],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@+(symbols)",
+            "group": "internal"
+          },
+          {
+            "pattern": "@+(api|components|compositions|directives|enums|interfaces|layouts|modules|services|utils|views|hooks)/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "@/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "*.scss",
+            "group": "index",
+            "patternOptions": { "matchBase": true }
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
     // Imports should come first
     "import/first": "error",
     // Other import rules

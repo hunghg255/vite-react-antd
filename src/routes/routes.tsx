@@ -1,4 +1,5 @@
 import React, { Suspense } from 'react';
+
 import { createBrowserRouter } from 'react-router-dom';
 
 import AppLayout from '@/layout/AppLayout/AppLayout';
