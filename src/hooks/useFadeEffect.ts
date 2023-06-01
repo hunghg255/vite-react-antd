@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import React from 'react';
 
 const TIMEOUT = 1000;

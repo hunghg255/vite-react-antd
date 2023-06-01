@@ -33,7 +33,7 @@ const tokenManager = new TokenManager({
       refresh_token: '',
     };
   },
-  onRefreshTokenSuccess: ({ token }) => {},
+  onRefreshTokenSuccess: () => {},
   onInvalidRefreshToken: async () => {
     // Logout
   },
