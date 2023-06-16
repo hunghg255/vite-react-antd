@@ -34,7 +34,7 @@
     "umi-request": "^1.4.0"
   },
   "devDependencies": {
-    "@hunghg255/eslint-config-react": "^0.0.7",
+    "@hunghg255/eslint-config-react": "^0.0.12",
     "@total-typescript/ts-reset": "^0.4.2",
     "@types/node": "^20.2.3",
     "@types/react": "^18.2.6",
