@@ -34,14 +34,14 @@
     "umi-request": "^1.4.0"
   },
   "devDependencies": {
-    "@hunghg255/eslint-config-react": "^0.0.12",
+    "@hunghg255/eslint-config-react": "^0.0.16",
     "@total-typescript/ts-reset": "^0.4.2",
     "@types/node": "^20.2.3",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "@types/react-helmet": "^6.1.6",
     "@vitejs/plugin-react": "^4.0.0",
-    "eslint": "^8.31.0",
+    "eslint": "^8.43.0",
     "eslint-config-react-app": "^7.0.1",
     "prettier": "^2.8.8",
     "sass": "^1.57.1",
