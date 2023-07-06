@@ -5,18 +5,21 @@ const TIMEOUT = 1000;
 
 const reducer = (state: any, action: any) => {
   switch (action.type) {
-    case 'start':
+    case 'start': {
       return {
         isTransitioning: true,
         shouldBeVisible: action.shouldBeVisible,
       };
-    case 'finish':
+    }
+    case 'finish': {
       return {
         isTransitioning: false,
         shouldBeVisible: state.shouldBeVisible,
       };
-    default:
+    }
+    default: {
       return state;
+    }
   }
 };
 
