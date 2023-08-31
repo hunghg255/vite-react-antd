@@ -7,7 +7,7 @@
 Messages must be matched by the following regex:
 
 ``` js
-/^(revert: )?(feat|fix|docs|dx|style|refactor|perf|test|workflow|build|ci|chore|types|wip)(\(.+\))?(\:|\!\:) .{1,50}/
+/^((feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|types|wip|release|deps?|merge|examples?|revert)(\(.+\))?(\:|\!\:)|(Merge|Revert|Version)) .{1,50}$/
 ```
 
 #### Examples
@@ -93,4 +93,3 @@ reference GitHub issues that this commit **Closes**.
 ```
 feat!: breaking change / feat(scope)!: rework API
 ```
-1
