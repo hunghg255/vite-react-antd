@@ -52,7 +52,7 @@
     "sass": "^1.57.1",
     "source-map-explorer": "^2.5.3",
     "typescript": "^4.6.4",
-    "verify-commit-msg": "^0.0.9",
+    "verify-commit-msg": "^0.0.10",
     "vite": "^4.4.0",
     "vite-plugin-checker": "^0.6.0",
     "vite-plugin-environment": "^1.1.3"
