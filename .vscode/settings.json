@@ -8,5 +8,10 @@
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
+  },
+  "workbench.tree.indent": 14,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#b7b7b7"
   }
 }
