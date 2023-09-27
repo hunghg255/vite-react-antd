@@ -1,5 +1,6 @@
 declare namespace NodeJS {
   export interface ProcessEnv {
-    NEXT_PUBLIC_APP_API_URL: string;
+    APP_API_URL: string;
+    LOCAL_STORAGE_KEY: string;
   }
 }

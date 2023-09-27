@@ -1,4 +1,4 @@
-# Vite + Antd + Jotai
+# CMS - NXB T4
 
 ## Getting Started
 
@@ -8,16 +8,34 @@ First, run the development server:
 # Install package
 npm install
 
-# Run
+# Run development server
 npm run dev
+
+# Run production server
+npm run build
+npm run preview
 ```
+
+## Gen Font
+
+```js
+// Chỉ Gen font với svg chuẩn 1 path
+
+1. Copy file svg to `public/svgs`
+2. Run command: `npm run gen-font`
+3. Check component `Icon` in `src/components/UI/Icon`
+```
+
+## Commit Convention
+
+[commit-convention](.github/commit-convention.md)
 
 ## Library Docs
 
 ```md
 1. Vitejs: hhttps://vitejs.dev/
 
-2. State management Reactjs: https://recoiljs.org/ Or https://jotai.org/
+2. State management Reactjs: https://jotai.org/
 
 3. Library UI: https://ant.design
 

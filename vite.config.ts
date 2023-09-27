@@ -42,10 +42,10 @@ export default defineConfig(({ mode }) => {
       sourcemap: isDev,
     },
     server: {
-      port: 3000,
+      port: 4005,
     },
     preview: {
-      port: 3000,
+      port: 4005,
     },
   };
 });

@@ -1,0 +1,22 @@
+
+@font-face {
+  font-family: "t4font";
+  src: url('t4font.eot?t=1695798891301'); /* IE9*/
+  src: url('t4font.eot?t=1695798891301#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("t4font.woff2?t=1695798891301") format("woff2"),
+  url("t4font.woff?t=1695798891301") format("woff"),
+  url('t4font.ttf?t=1695798891301') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('t4font.svg?t=1695798891301#t4font') format('svg'); /* iOS 4.1- */
+}
+
+[class^="t4font-"], [class*=" t4font-"] {
+  font-family: 't4font' !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.t4font-vite:before { content: "\ea01"; }
+
+  
