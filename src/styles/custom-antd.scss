@@ -1,0 +1,20 @@
+.ant-form-item-required {
+  display: inline-flex;
+  flex-direction: row-reverse;
+  color: #262626 !important;
+
+  &::before {
+    margin-left: 4px;
+  }
+  &::after {
+    display: none;
+  }
+}
+
+input {
+  height: 40px;
+}
+
+.ant-form-item {
+  margin: 0 0 20px;
+}

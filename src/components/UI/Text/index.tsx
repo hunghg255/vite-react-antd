@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-types */
 import React from 'react';
 
 import classNames from 'classnames';
@@ -5,52 +6,67 @@ import classNames from 'classnames';
 interface TextProps {
   children: React.ReactNode;
   type?:
-    | 'h1-bold'
-    | 'h1-regular'
-    | 'h2-bold'
-    | 'h2-regular'
-    | 'h3-bold'
-    | 'h3-regular'
+    | 'heading1-medium'
+    | 'heading2-medium'
+    | 'heading3-bold'
+    | 'heading3-medium'
+    | 'heading3-regular'
+    | 'heading4-medium'
+    | 'heading5-bold'
+    | 'heading5-medium'
+    | 'heading5-regular'
     | 'body-bold'
+    | 'body-medium'
     | 'body-regular'
-    | 'body-2-bold'
-    | 'body-2-regular'
-    | 'body-3-bold'
-    | 'body-3-regular'
-    | 'body-4-bold'
-    | 'body-4-regular'
-    | undefined;
+    | 'body-underline'
+    | 'caption-regular'
+    | (string & {});
   color?:
     | 'cwhite'
     | 'cblack'
-    | 'primary-1'
-    | 'primary-2'
-    | 'primary-3'
-    | 'primary-4'
-    | 'primary-5'
-    | 'secondary-1'
-    | 'secondary-2'
-    | 'secondary-3'
-    | 'secondary-4'
-    | 'secondary-5'
-    | 'neutral-1'
-    | 'neutral-2'
-    | 'neutral-3'
-    | 'neutral-4'
-    | 'neutral-5'
-    | 'neutral-6'
-    | 'neutral-7'
+    | 'primary-lighter'
+    | 'primary-light'
+    | 'primary-main'
+    | 'primary-dark'
+    | 'primary-darker'
+    | 'secondary-lightest'
+    | 'secondary-lighter'
+    | 'secondary-light'
+    | 'secondary-main'
+    | 'secondary-dark'
+    | 'neutral-white'
+    | 'neutral-gray-2'
+    | 'neutral-gray-3'
+    | 'neutral-gray-4'
+    | 'neutral-gray-5'
+    | 'neutral-gray-6'
+    | 'neutral-gray-7'
+    | 'neutral-gray-8'
+    | 'neutral-gray-9'
+    | 'neutral-gray-10'
+    | 'success-background'
+    | 'success-hover'
+    | 'success-main'
+    | 'success-active'
+    | 'warning-background'
+    | 'warning-hover'
+    | 'warning-main'
+    | 'warning-active'
+    | 'error-background'
+    | 'error-hover'
+    | 'error-main'
+    | 'error-active'
     | 'link-1'
     | 'link-2'
     | 'link-3'
     | 'link-4'
     | 'link-5'
-    | undefined;
+    | (string & {});
   disabled?: boolean;
   state?: null | 'disable';
-  className?: string;
+  className?: string | (string & {});
   onClick?: () => void;
-  element?: 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
+  element?: 'span' | 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
 }
 
 const Text: React.FC<TextProps> = ({

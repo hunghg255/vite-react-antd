@@ -40,7 +40,7 @@ export const useAuth = () => {
   const onLogin = (data: IAuth) => {
     try {
       setAuthData(data);
-      navigate(ROUTE_PATH.REQUIREMENT);
+      navigate(ROUTE_PATH.REPORT);
     } catch (error) {
       // eslint-disable-next-line no-console
       console.log(error);

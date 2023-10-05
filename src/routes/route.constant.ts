@@ -1,4 +1,5 @@
 export const ROUTE_PATH = {
   SIGN_IN: '/sign-in',
-  REQUIREMENT: '/requirement',
+  FORGOT_PASSWORD: '/forgot-password',
+  REPORT: '/report',
 };

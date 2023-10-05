@@ -1,9 +1,14 @@
+// @ts-ignore
 import React from 'react';
 
-// @ts-ignore
+import classNames from 'classnames';
+
 import { T4fontClassname } from '../../../../public/t4font/t4font.js';
 
-export const Icon = (props: React.SVGProps<SVGSVGElement> & { iconName: T4fontClassname }) => {
+export const Icon = ({
+  className = '',
+  ...props
+}: React.SVGProps<SVGSVGElement> & { icon: T4fontClassname; className?: string }) => {
   // @ts-ignore
-  return <i className={`${props.iconName}`} {...props} />;
+  return <i className={classNames(props.icon, className)} {...props} />;
 };

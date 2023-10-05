@@ -2,11 +2,14 @@ import { Suspense } from 'react';
 
 import { Outlet } from 'react-router-dom';
 
+import styles from './index.module.scss';
+
 const AuthLayout = () => {
   return (
     <Suspense fallback={undefined}>
-      <h1>Auth Header</h1>
-      <Outlet />
+      <div className={styles.authLayout}>
+        <Outlet />
+      </div>
     </Suspense>
   );
 };

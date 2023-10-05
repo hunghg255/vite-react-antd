@@ -5,22 +5,22 @@ import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 import ButtonPrimary from '@/components/UI/Button/ButtonPrimary';
+import { Icon } from '@/components/UI/IconFont/Icon';
 import Text from '@/components/UI/Text';
-// import { useAuth } from '@/store/auth/useAuth';
 
 import styles from './index.module.scss';
 
-const SignIn = () => {
+const ForgotPassword = () => {
   return (
     <>
       <Helmet>
-        <title>Sign In</title>
+        <title>Forgot Password</title>
       </Helmet>
 
       <div className={styles.loginWrap}>
         <img src='public/svg/logo.svg' alt='logo' />
         <Text type='heading3-bold' className='text-center mb-20' element='h1'>
-          Đăng nhập vào IC Publisher
+          Quên mật khẩu
         </Text>
         <Form layout='vertical'>
           <Form.Item
@@ -40,32 +40,19 @@ const SignIn = () => {
             <Input placeholder='Nhập email' />
           </Form.Item>
 
-          <Form.Item
-            name='password'
-            label='Mật khẩu'
-            rules={[
-              {
-                required: true,
-                message: 'Vui lòng nhập mật khẩu',
-              },
-              {
-                min: 6,
-                message: 'Mật khẩu phải có ít nhất 6 ký tự',
-              },
-            ]}
-          >
-            <Input placeholder='Mật khẩu' />
-          </Form.Item>
+          <ButtonPrimary htmlType='submit' className='mb-20'>
+            Đăng nhập
+          </ButtonPrimary>
 
-          <Text type='heading5-regular' color='primary-light' className='mb-20 text-right'>
-            <Link to='/forgot-password'>Quên mật khẩu?</Link>
+          <Text type='heading5-regular' color='cblack' className='flex-center'>
+            <Link to='/sign-in'>
+              <Icon icon='t4font-ic-eva_arrow-ios-back-fill' /> Quay lại đăng nhập
+            </Link>
           </Text>
-
-          <ButtonPrimary htmlType='submit'>Đăng nhập</ButtonPrimary>
         </Form>
       </div>
     </>
   );
 };
 
-export default SignIn;
+export default ForgotPassword;

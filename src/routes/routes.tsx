@@ -9,7 +9,9 @@ import MainLayout from '@/layout/MainLayout/MainLayout';
 import { ROUTE_PATH } from './route.constant';
 
 const SignIn = React.lazy(() => import('@/pages/SignIn/SignIn'));
-const Requirement = React.lazy(() => import('@/pages/Requirement/Requirement'));
+const ForgotPassword = React.lazy(() => import('@/pages/ForgotPassword/ForgotPassword'));
+
+const Report = React.lazy(() => import('@/pages/Report/Report'));
 
 export const router = createBrowserRouter([
   {
@@ -27,16 +29,24 @@ export const router = createBrowserRouter([
               </Suspense>
             ),
           },
+          {
+            path: ROUTE_PATH.FORGOT_PASSWORD,
+            element: (
+              <Suspense fallback={undefined}>
+                <ForgotPassword />
+              </Suspense>
+            ),
+          },
         ],
       },
       {
         element: <MainLayout />,
         children: [
           {
-            path: ROUTE_PATH.REQUIREMENT,
+            path: ROUTE_PATH.REPORT,
             element: (
               <Suspense fallback={undefined}>
-                <Requirement />
+                <Report />
               </Suspense>
             ),
           },

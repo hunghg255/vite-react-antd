@@ -19,7 +19,7 @@ const AppLayout = () => {
     }
 
     if (location.pathname === '/') {
-      navigate(ROUTE_PATH.REQUIREMENT);
+      navigate(ROUTE_PATH.REPORT);
     }
   });
 

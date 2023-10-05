@@ -1,75 +1,79 @@
-.h1-bold {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 60px;
+.heading1-medium {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 46px;
 }
-.h1-regular {
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 60px;
+.heading2-medium {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
 }
-.h2-bold {
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-}
-.h2-regular {
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 48px;
-}
-.h3-bold {
+.heading3-bold {
   font-weight: 700;
   font-size: 24px;
-  line-height: 36px;
-
-  @media (max-width: 768px) {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-.h3-regular {
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-}
-.body-bold {
-  font-weight: 600;
-  font-size: 20px;
   line-height: 32px;
 }
+.heading3-medium {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+.heading3-regular {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.heading4-medium {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.heading5-bold {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.heading5-medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.heading5-regular {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body-bold {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.body-medium {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+
 .body-regular {
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-}
-.body-2-bold {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
-}
-.body-2-regular {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-}
-.body-3-bold {
-  font-weight: 700;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 22px;
 }
-.body-3-regular {
+
+.body-underline {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 22px;
 }
-.body-4-bold {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-}
-.body-4-regular {
+
+.caption-regular {
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 20px;
 }

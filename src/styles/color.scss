@@ -2,31 +2,43 @@
   --white: #ffffff;
   --black: #000000;
 
-  --primary-1: #00a652;
-  --primary-2: #33b875;
-  --primary-3: #66ca97;
-  --primary-4: #99dbba;
-  --primary-5: #d9f2e5;
+  --primary-lighter: #ced9ff;
+  --primary-light: #3d59a6;
+  --primary-main: #203d99;
+  --primary-dark: #122673;
+  --primary-darker: #071955;
 
-  --secondary-1: #cd3a64;
-  --secondary-2: #f05984;
-  --secondary-3: #f69bb5;
-  --secondary-4: #f9bdce;
-  --secondary-5: #fde6ed;
+  --secondary-lightest: #fff7ed;
+  --secondary-lighter: #ffb473;
+  --secondary-light: #fa9548;
+  --secondary-main: #e67817;
+  --secondary-dark: #c75310;
 
-  --neutral-1: #2f2f2f;
-  --neutral-2: #494949;
-  --neutral-3: #7b7b7b;
-  --neutral-4: #b8b8b8;
-  --neutral-5: #d9d9d9;
-  --neutral-6: #f6f6f6;
-  --neutral-7: #ffffff;
+  --neutral-white: #ffffff;
+  --neutral-gray-2: #fafafa;
+  --neutral-gray-3: #f5f5f5;
+  --neutral-gray-4: #f0f0f0;
+  --neutral-gray-5: #d9d9d9;
+  --neutral-gray-6: #bfbfbf;
+  --neutral-gray-7: #8c8c8c;
+  --neutral-gray-8: #595959;
+  --neutral-gray-9: #434343;
+  --neutral-gray-10: #f9fafb;
 
-  --danger-1: #f41515;
-  --danger-2: #ff3b3b;
-  --danger-3: #ff6d6d;
-  --danger-4: #ffa5a5;
-  --danger-5: #ffe9e9;
+  --success-background: #eafaeb;
+  --success-hover: #92d1ae;
+  --success-main: #099d5d;
+  --success-active: #017848;
+
+  --warning-background: #fff7ed;
+  --warning-hover: #212b36;
+  --warning-main: #e67817;
+  --warning-active: #c75310;
+
+  --error-background: #ffeae6;
+  --error-hover: #ff7875;
+  --error-main: #f41515;
+  --error-active: #b00606;
 
   --link-1: #0066ff;
   --link-2: #3e7bfa;
@@ -35,77 +47,109 @@
   --link-5: #d6e3ff;
 }
 
-.primary-1 {
-  color: var(--primary-1);
+.primary-lighter {
+  color: var(--primary-lighter);
 }
-.primary-2 {
-  color: var(--primary-2);
+.primary-light {
+  color: var(--primary-light);
 }
-.primary-3 {
-  color: var(--primary-3);
+.primary-main {
+  color: var(--primary-main);
 }
-.primary-4 {
-  color: var(--primary-4);
+.primary-dark {
+  color: var(--primary-dark);
 }
-.primary-5 {
-  color: var(--primary-5);
-}
-
-.secondary-1 {
-  color: var(--secondary-1);
-}
-.secondary-2 {
-  color: var(--secondary-2);
-}
-.secondary-3 {
-  color: var(--secondary-3);
-}
-.secondary-4 {
-  color: var(--secondary-4);
-}
-.secondary-5 {
-  color: var(--secondary-5);
+.primary-darker {
+  color: var(--primary-darker);
 }
 
-.danger-1 {
-  color: var(--danger-1);
+.secondary-lightest {
+  color: var(--secondary-lightest);
 }
-.danger-2 {
-  color: var(--danger-2);
+.secondary-lighter {
+  color: var(--secondary-lighter);
 }
-.danger-3 {
-  color: var(--danger-3);
+.secondary-light {
+  color: var(--secondary-light);
 }
-.danger-4 {
-  color: var(--danger-4);
+.secondary-main {
+  color: var(--secondary-main);
 }
-.danger-5 {
-  color: var(--danger-5);
-}
-
-.neutral-1 {
-  color: var(--neutral-1);
+.secondary-dark {
+  color: var(--secondary-dark);
 }
 
-.neutral-2 {
-  color: var(--neutral-2);
+.success-background {
+  color: var(--success-background);
+}
+.success-hover {
+  color: var(--success-hover);
+}
+.success-main {
+  color: var(--success-main);
+}
+.success-active {
+  color: var(--success-active);
 }
 
-.neutral-3 {
-  color: var(--neutral-3);
+.warning-background {
+  color: var(--warning-background);
+}
+.warning-hover {
+  color: var(--warning-hover);
+}
+.warning-main {
+  color: var(--warning-main);
+}
+.warning-active {
+  color: var(--error-active);
 }
 
-.neutral-4 {
-  color: var(--neutral-4);
+.error-background {
+  color: var(--error-background);
 }
-.neutral-5 {
-  color: var(--neutral-5);
+.error-hover {
+  color: var(--error-hover);
 }
-.neutral-6 {
-  color: var(--neutral-6);
+.error-main {
+  color: var(--error-main);
 }
-.neutral-7 {
-  color: var(--neutral-7);
+.error-active {
+  color: var(--error-active);
+}
+
+.neutral-white {
+  color: var(--neutral-white);
+}
+
+.neutral-gray-2 {
+  color: var(--neutral-gray-2);
+}
+
+.neutral-gray-3 {
+  color: var(--neutral-gray-3);
+}
+
+.neutral-gray-4 {
+  color: var(--neutral-gray-4);
+}
+.neutral-gray-5 {
+  color: var(--neutral-gray-5);
+}
+.neutral-gray-6 {
+  color: var(--neutral-gray-6);
+}
+.neutral-gray-7 {
+  color: var(--neutral-gray-7);
+}
+.neutral-gray-8 {
+  color: var(--neutral-gray-8);
+}
+.neutral-gray-9 {
+  color: var(--neutral-gray-9);
+}
+.neutral-gray-10 {
+  color: var(--neutral-gray-10);
 }
 
 .link-1 {
@@ -134,14 +178,6 @@
 
 .bg-white {
   background-color: var(--white);
-}
-
-.bg-gray-4 {
-  background-color: var(--neutral-4);
-}
-
-.danger {
-  color: var(--danger-1);
 }
 
 .link {
