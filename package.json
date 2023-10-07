@@ -55,7 +55,7 @@
     "typescript": "^4.9.5",
     "verify-commit-msg": "^0.0.11",
     "vite": "^4.4.9",
-    "vite-host-qrcode": "^0.0.1",
+    "vite-host-qrcode": "^0.0.2",
     "vite-plugin-checker": "^0.6.2",
     "vite-plugin-environment": "^1.1.3"
   },
