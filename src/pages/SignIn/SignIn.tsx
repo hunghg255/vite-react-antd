@@ -17,6 +17,8 @@ const SignIn = () => {
         <title>Sign In</title>
       </Helmet>
 
+      <h1>{process.env.TITLE}</h1>
+
       <div className={styles.loginWrap}>
         <img src='public/svg/logo.svg' alt='logo' />
         <Text type='heading3-bold' className='text-center mb-20' element='h1'>

@@ -4,11 +4,11 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "npm run lint && tsc && vite build",
-    "buildDev": "cp -f .env.development .env && npm run build",
-    "buildProd": "cp -f .env.production .env && npm run build",
-    "preview": "vite preview",
+    "buildDev": "npm run lint && tsc && vite build --mode development",
+    "buildProd": "npm run lint && tsc && vite build --mode production",
+    "preview": "vite preview --host",
     "start": "npm run build && vite preview",
     "lint": "eslint --ext .ts,.tsx src --color",
     "format": "prettier --write \"./src/**/*.{ts,tsx,json}\"",
@@ -55,6 +55,7 @@
     "typescript": "^4.9.5",
     "verify-commit-msg": "^0.0.11",
     "vite": "^4.4.9",
+    "vite-host-qrcode": "^0.0.1",
     "vite-plugin-checker": "^0.6.2",
     "vite-plugin-environment": "^1.1.3"
   },
