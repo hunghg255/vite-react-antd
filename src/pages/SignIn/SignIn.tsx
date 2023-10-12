@@ -17,7 +17,7 @@ const SignIn = () => {
       <div className={styles.loginWrap}>
         <img src='/images/logo.png' alt='logo' />
         <Text type='heading3-bold' className='text-center mb-20' element='h1'>
-          Đăng nhập vào IC Publisher 11
+          Đăng nhập vào IC Publisher 11 2
         </Text>
       </div>
     </>
