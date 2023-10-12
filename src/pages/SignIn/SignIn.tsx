@@ -15,7 +15,7 @@ const SignIn = () => {
       <h1>{process.env.TITLE}</h1>
 
       <div className={styles.loginWrap}>
-        <img src='/svg/logo.svg' alt='logo' />
+        <img src='/images/logo.png' alt='logo' />
         <Text type='heading3-bold' className='text-center mb-20' element='h1'>
           Đăng nhập vào IC Publisher 11
         </Text>
