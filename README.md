@@ -1,4 +1,4 @@
-# CMS - NXB T4
+# Vite + Antd + Jotai
 
 ## Getting Started
 
@@ -50,4 +50,8 @@ npm run preview
 8. Processing CSS: https://sass-lang.com/guide
 
 9. Routing: https://reactrouter.com/
+```
+
+```md
+Debug Form: https://www.npmjs.com/package/antd-form-devtools
 ```
