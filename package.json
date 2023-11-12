@@ -37,7 +37,7 @@
     "umi-request": "^1.4.0"
   },
   "devDependencies": {
-    "@hunghg255/eslint-config-react": "^0.0.16",
+    "@hunghg255/eslint-config-react": "^0.0.26",
     "@total-typescript/ts-reset": "^0.5.1",
     "@types/node": "^20.8.9",
     "@types/react": "^18.2.33",
@@ -48,7 +48,6 @@
     "bumpp": "^9.2.0",
     "csvg-to-font": "^1.0.15",
     "eslint": "^8.52.0",
-    "eslint-config-react-app": "^7.0.1",
     "git-scm-hooks": "^0.0.6",
     "prettier": "^2.8.8",
     "sass": "^1.69.5",
