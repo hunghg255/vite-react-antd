@@ -15,3 +15,5 @@ node_modules
 .swc
 
 vite.config.ts
+stats.html
+.eslintcache
