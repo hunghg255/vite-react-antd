@@ -1,6 +1,4 @@
-import { useNavigate } from 'react-router-dom';
-
-import { ROUTE_PATH } from './../../routes/route.constant';
+import { useNavigate } from '@tanstack/react-router';
 
 export interface IAuth {
   loading?: boolean;
@@ -40,7 +38,9 @@ export const useAuth = () => {
   const onLogin = (data: IAuth) => {
     try {
       setAuthData(data);
-      navigate(ROUTE_PATH.REPORT);
+      navigate({
+        to: '/report',
+      });
     } catch (error) {
       // eslint-disable-next-line no-console
       console.log(error);

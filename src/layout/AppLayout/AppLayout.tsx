@@ -1,33 +1,33 @@
-import { Suspense } from 'react';
+import React, { Suspense } from 'react';
 
+import { useNavigate, useRouter } from '@tanstack/react-router';
 import { useMount } from 'ahooks';
-import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 
-import { ROUTE_PATH } from '@/routes/route.constant';
 import { getAccessToken } from '@/store/auth/useAuth';
 import { useProfile } from '@/store/profile/useProfile';
 
-const AppLayout = () => {
+const AppLayout = ({ children }: { children: React.ReactNode }) => {
   const navigate = useNavigate();
-  const location = useLocation();
+  const router = useRouter();
+
   useProfile();
 
   useMount(() => {
     const isLogin = getAccessToken();
     if (!isLogin) {
-      return navigate(ROUTE_PATH.SIGN_IN);
+      return navigate({
+        to: '/sign-in',
+      });
     }
 
-    if (location.pathname === '/') {
-      navigate(ROUTE_PATH.REPORT);
+    if (router.latestLocation.pathname === '/') {
+      navigate({
+        to: '/report',
+      });
     }
   });
 
-  return (
-    <Suspense fallback={undefined}>
-      <Outlet />
-    </Suspense>
-  );
+  return <Suspense fallback={undefined}>{children}</Suspense>;
 };
 
 export default AppLayout;

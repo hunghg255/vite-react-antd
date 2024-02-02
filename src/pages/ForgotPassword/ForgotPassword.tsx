@@ -1,8 +1,8 @@
 import React from 'react';
 
+import { Link } from '@tanstack/react-router';
 import { Form, Input } from 'antd';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
 
 import ButtonPrimary from '@/components/UI/Button/ButtonPrimary';
 import { Icon } from '@/components/UI/IconFont/Icon';

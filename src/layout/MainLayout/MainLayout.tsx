@@ -1,13 +1,24 @@
 import { Suspense } from 'react';
 
-import { Outlet } from 'react-router-dom';
+import { Link } from '@tanstack/react-router';
 
-const MainLayout = () => {
+const MainLayout = ({ children }: any) => {
   return (
     <Suspense fallback={undefined}>
-      <h1>Main Header</h1>
+      <div className='p-2 flex gap-2'>
+        <Link to='/' className='[&.active]:font-bold'>
+          Home
+        </Link>{' '}
+        <Link to='/report' className='[&.active]:font-bold'>
+          Report
+        </Link>
+        <Link to='/posts' className='[&.active]:font-bold'>
+          Post
+        </Link>
+      </div>
+      <hr />
 
-      <Outlet />
+      {children}
     </Suspense>
   );
 };
