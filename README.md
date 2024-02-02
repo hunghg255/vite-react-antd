@@ -49,7 +49,7 @@ npm run preview
 
 8. Processing CSS: https://sass-lang.com/guide
 
-9. Routing: https://reactrouter.com/
+9. Routing: https://tanstack.com/router/latest
 ```
 
 ```md
