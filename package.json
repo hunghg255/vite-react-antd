@@ -19,6 +19,9 @@
     "gen-icon": "csvgtocss"
   },
   "dependencies": {
+    "@tanstack/react-router": "^1.15.10",
+    "@tanstack/router-devtools": "^1.15.10",
+    "@tanstack/router-vite-plugin": "^1.15.11",
     "ahooks": "^3.7.8",
     "antd": "^5.12.5",
     "brainless-token-manager": "^1.3.3",
@@ -33,7 +36,6 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-i18next": "^12.3.1",
-    "react-router-dom": "^6.21.1",
     "umi-request": "^1.4.0"
   },
   "devDependencies": {
@@ -61,8 +63,7 @@
     "vite-minify-css-module": "^1.0.1",
     "vite-plugin-checker": "^0.6.2",
     "vite-plugin-environment": "^1.1.3",
-    "vite-plugin-resize-image": "^0.0.4",
-    "vite-plugin-webfont-dl": "^3.9.1"
+    "vite-plugin-resize-image": "^0.0.8"
   },
   "browserslist": [
     ">0.3%",

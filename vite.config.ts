@@ -4,11 +4,11 @@ import { defineConfig } from 'vite';
 import checker from 'vite-plugin-checker';
 import EnvironmentPlugin from 'vite-plugin-environment';
 import Printer from 'vite-host-qrcode/vite';
-// import webfontDownload from 'vite-plugin-webfont-dl';
 import ResizeImage from 'vite-plugin-resize-image/vite';
 import MinifyCssModule from 'vite-minify-css-module/vite';
 import ConsoleDebug from 'vite-console-debug/vite';
 import { visualizer } from 'rollup-plugin-visualizer';
+import { TanStackRouterVite } from '@tanstack/router-vite-plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -53,10 +53,9 @@ export default defineConfig(({ mode }) => {
         conversion: [
           { from: 'jpeg', to: 'webp' },
           { from: 'png', to: 'webp' },
-          { from: 'JPG', to: 'jpeg' },
+          { from: 'jpg', to: 'jpeg' },
         ],
       }),
-      // webfontDownload({ }),
       MinifyCssModule(),
       ConsoleDebug({
         noConsole: !isDev,
@@ -65,6 +64,8 @@ export default defineConfig(({ mode }) => {
         ...visualizer(),
         apply: 'build',
       },
+
+      TanStackRouterVite(),
     ],
     css: {
       devSourcemap: isDev,

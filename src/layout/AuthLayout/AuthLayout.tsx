@@ -1,15 +1,11 @@
 import { Suspense } from 'react';
 
-import { Outlet } from 'react-router-dom';
-
 import styles from './index.module.scss';
 
-const AuthLayout = () => {
+const AuthLayout = ({ children }: any) => {
   return (
     <Suspense fallback={undefined}>
-      <div className={styles.authLayout}>
-        <Outlet />
-      </div>
+      <div className={styles.authLayout}>{children}</div>
     </Suspense>
   );
 };
