@@ -77,6 +77,13 @@ export default defineConfig(({ mode }) => {
         include: [/node_modules/],
       },
       sourcemap: isAnalyze,
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            antd: ['antd'],
+          },
+        },
+      },
     },
     resolve: {
       alias: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],

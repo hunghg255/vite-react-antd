@@ -10,7 +10,7 @@
     "buildProd": "npm run lint && tsc && vite build --mode production",
     "preview": "vite preview --host",
     "start": "npm run build && vite preview",
-    "lint": "eslint --ext .ts,.tsx src --color --cache --quiet",
+    "lint": "eslint --ext .ts,.tsx src --color --quiet",
     "format": "prettier --write \"./src/**/*.{ts,tsx,json}\"",
     "analyze": "npm run lint && tsc && vite build --mode=analyze && source-map-explorer 'dist/assets/*.js'",
     "verify-commit": "verify-commit-msg",
