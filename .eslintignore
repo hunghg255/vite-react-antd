@@ -17,3 +17,4 @@ node_modules
 vite.config.ts
 stats.html
 .eslintcache
+src/styles/color/color.variables.ts

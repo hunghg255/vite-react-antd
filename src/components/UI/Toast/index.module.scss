@@ -1,0 +1,17 @@
+.msg {
+  > div {
+    gap: 12px;
+  }
+  width: 395px;
+  padding: 9px 16px;
+  border-radius: 6px;
+}
+
+.msgSuccess {
+  border: 1px solid var(--success-bghover);
+  background: var(--success-background);
+}
+.msgError {
+  border: 1px solid var(--error-bghover);
+  background: var(--error-background);
+}

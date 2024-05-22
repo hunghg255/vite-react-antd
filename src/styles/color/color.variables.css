@@ -1,0 +1,229 @@
+
+/* ----------------------------------------------------------- */
+/* WARNING: NOT MODIFY THIS FILE */
+/* ----------------------------------------------------------- */
+/* Step 1: Modify file color-preview.json */
+/* Step 2: npm run gen-color */
+/* ----------------------------------------------------------- */
+
+:root {
+  --primary-8: rgba(62, 95, 44, 0.08);
+--primary-50: #F3F8ED;
+--primary-100: #F3F8ED;
+--primary-200: #CAE1B5;
+--primary-300: #A8CC8A;
+--primary-400: #6B9C46;
+--primary-main: #405F2D;
+--x-home-8: rgba(117, 157, 62, 0.08);
+--x-home-50: #F5F9EC;
+--x-home-100: #E7F1D6;
+--x-home-200: #D2E4B2;
+--x-home-300: #B3D185;
+--x-home-400: #97BD5E;
+--x-home-main: #759D3F;
+--x-cell-8: rgba(188, 111, 198, 0.08);
+--x-cell-50: #FBF7FC;
+--x-cell-100: #F7EEF9;
+--x-cell-200: #EEDBF3;
+--x-cell-300: #E2BEE9;
+--x-cell-400: #BC6FC6;
+--x-cell-main: #9F4FA8;
+--neutral-50: #F6F6F6;
+--neutral-100: #E7E7E7;
+--neutral-200: #D1D1D1;
+--neutral-300: #BCBCBC;
+--neutral-400: #888888;
+--neutral-500: #6D6D6D;
+--neutral-600: #5D5D5D;
+--neutral-700: #4F4F4F;
+--neutral-800: #454545;
+--neutral-900: #131313;
+--text-primary: #131313;
+--text-secondary: #6D6D6D;
+--text-disabled: #BCBCBC;
+--text-inverse: #F6F6F6;
+--background-default: #FFFFFF;
+--background-gray: #E7E7E7;
+--background-beige: #F9F6F1;
+--background-footer: #454545;
+--background-disabled: #E7E7E7;
+--divider-default: #E7E7E7;
+--outlined-default: #BCBCBC;
+--outlined-disabled: #D1D1D1;
+--success-lightest: #E7F1D6;
+--success-light: #97BD5E;
+--success-main: #759D3E;
+--success-dark: #3E5F2C;
+--error-lightest: #FDE3E4;
+--error-light: #EA4951;
+--error-main: #D9363E;
+--error-dark: #CD2028;
+--warning-light: #FFF2D8;
+--warning-main: #FF9E00;
+--warning-dark: #CB8903;
+}
+
+.primary-8 {
+      color: rgba(62, 95, 44, 0.08);
+    };
+.primary-50 {
+      color: #F3F8ED;
+    };
+.primary-100 {
+      color: #F3F8ED;
+    };
+.primary-200 {
+      color: #CAE1B5;
+    };
+.primary-300 {
+      color: #A8CC8A;
+    };
+.primary-400 {
+      color: #6B9C46;
+    };
+.primary-main {
+      color: #405F2D;
+    };
+.x-home-8 {
+      color: rgba(117, 157, 62, 0.08);
+    };
+.x-home-50 {
+      color: #F5F9EC;
+    };
+.x-home-100 {
+      color: #E7F1D6;
+    };
+.x-home-200 {
+      color: #D2E4B2;
+    };
+.x-home-300 {
+      color: #B3D185;
+    };
+.x-home-400 {
+      color: #97BD5E;
+    };
+.x-home-main {
+      color: #759D3F;
+    };
+.x-cell-8 {
+      color: rgba(188, 111, 198, 0.08);
+    };
+.x-cell-50 {
+      color: #FBF7FC;
+    };
+.x-cell-100 {
+      color: #F7EEF9;
+    };
+.x-cell-200 {
+      color: #EEDBF3;
+    };
+.x-cell-300 {
+      color: #E2BEE9;
+    };
+.x-cell-400 {
+      color: #BC6FC6;
+    };
+.x-cell-main {
+      color: #9F4FA8;
+    };
+.neutral-50 {
+      color: #F6F6F6;
+    };
+.neutral-100 {
+      color: #E7E7E7;
+    };
+.neutral-200 {
+      color: #D1D1D1;
+    };
+.neutral-300 {
+      color: #BCBCBC;
+    };
+.neutral-400 {
+      color: #888888;
+    };
+.neutral-500 {
+      color: #6D6D6D;
+    };
+.neutral-600 {
+      color: #5D5D5D;
+    };
+.neutral-700 {
+      color: #4F4F4F;
+    };
+.neutral-800 {
+      color: #454545;
+    };
+.neutral-900 {
+      color: #131313;
+    };
+.text-primary {
+      color: #131313;
+    };
+.text-secondary {
+      color: #6D6D6D;
+    };
+.text-disabled {
+      color: #BCBCBC;
+    };
+.text-inverse {
+      color: #F6F6F6;
+    };
+.background-default {
+      color: #FFFFFF;
+    };
+.background-gray {
+      color: #E7E7E7;
+    };
+.background-beige {
+      color: #F9F6F1;
+    };
+.background-footer {
+      color: #454545;
+    };
+.background-disabled {
+      color: #E7E7E7;
+    };
+.divider-default {
+      color: #E7E7E7;
+    };
+.outlined-default {
+      color: #BCBCBC;
+    };
+.outlined-disabled {
+      color: #D1D1D1;
+    };
+.success-lightest {
+      color: #E7F1D6;
+    };
+.success-light {
+      color: #97BD5E;
+    };
+.success-main {
+      color: #759D3E;
+    };
+.success-dark {
+      color: #3E5F2C;
+    };
+.error-lightest {
+      color: #FDE3E4;
+    };
+.error-light {
+      color: #EA4951;
+    };
+.error-main {
+      color: #D9363E;
+    };
+.error-dark {
+      color: #CD2028;
+    };
+.warning-light {
+      color: #FFF2D8;
+    };
+.warning-main {
+      color: #FF9E00;
+    };
+.warning-dark {
+      color: #CB8903;
+    };
+
+

@@ -16,7 +16,8 @@
     "verify-commit": "verify-commit-msg",
     "prepare": "git-scm-hooks",
     "release": "bumpp -r",
-    "gen-icon": "csvgtocss"
+    "gen-icon": "csvgtocss",
+    "gen-color": "esno ./scripts/genColorCss.ts"
   },
   "dependencies": {
     "ahooks": "^3.7.11",
@@ -34,6 +35,7 @@
     "react-helmet": "^6.1.0",
     "react-i18next": "^12.3.1",
     "react-router-dom": "^6.23.1",
+    "sonner": "^1.4.41",
     "umi-request": "^1.4.0"
   },
   "devDependencies": {
