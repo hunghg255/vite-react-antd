@@ -18,3 +18,4 @@ vite.config.ts
 stats.html
 .eslintcache
 src/styles/color/color.variables.ts
+scripts/genColorCss.ts
