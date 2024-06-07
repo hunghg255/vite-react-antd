@@ -20,9 +20,9 @@ npm run preview
 
 ```js
 1. Copy file svg to `public/svgIcon`
-2. Run command: `npm run gen-font`
-3. Check component `Icon` in `src/components/UI/IconFont/Icon.tsx`
-4. View icon in `http://localhost:4005/public/t4font/index.html`
+2. Run command: `npm run gen-icon`
+3. Check component `Icon` in `src/components/UI/Icon/Icon.tsx`
+4. View icon in `http://localhost:4005/public/svgtocss/icon-demo.html`
 ```
 
 More: Install extenstion to preview icon: [Icon-Preivew](https://marketplace.visualstudio.com/items?itemName=hunghg255.iconify-preview)
