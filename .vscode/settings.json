@@ -21,5 +21,8 @@
   "iconify.prefixes": ["", "icon"],
   "iconify.inplace": false,
   "iconify.annotations": true,
-  "iconify.languageIds": ["typescript", "typescriptreact"]
+  "iconify.languageIds": ["typescript", "typescriptreact"],
+
+  "color-preview.annotations": true,
+  "color-preview.colorDirectoryPath": "./src/styles/color/color-preview-vscode.json"
 }

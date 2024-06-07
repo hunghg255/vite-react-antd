@@ -76,5 +76,30 @@ export type TColor = ${keys
   fs.writeFileSync('src/styles/color/color.variables.ts', templateTs);
 };
 
+const genColorPreviewVscode = () => {
+  const keys = Object.keys(light);
+
+  const templateTs = `
+{
+  "Light": {
+    ${keys
+      .map((v) => {
+        const value = light[v];
+
+        return Object.keys(value)
+          .map((k) => {
+            return [`"${v}-${k}": "${value[k]}"`, `"--${v}-${k}": "${value[k]}"`].join(',\n');
+          })
+          .join(',\n');
+      })
+      .join(',\n')}
+  }
+}
+`;
+
+  fs.writeFileSync('src/styles/color/color-preview-vscode.json', templateTs);
+};
+
 genCss();
 genTypes();
+genColorPreviewVscode();

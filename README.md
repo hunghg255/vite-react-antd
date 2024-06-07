@@ -16,15 +16,35 @@ npm run build
 npm run preview
 ```
 
-## Gen Font
+## Gen Icon
 
 ```js
-// Chỉ Gen font với svg chuẩn 1 path
-
-1. Copy file svg to `public/svgs`
+1. Copy file svg to `public/svgIcon`
 2. Run command: `npm run gen-font`
-3. Check component `Icon` in `src/components/UI/Icon`
+3. Check component `Icon` in `src/components/UI/IconFont/Icon.tsx`
+4. View icon in `http://localhost:4005/public/t4font/index.html`
 ```
+
+More: Install extenstion to preview icon: [Icon-Preivew](https://marketplace.visualstudio.com/items?itemName=hunghg255.iconify-preview)
+
+## Gen Color
+
+1. Update color to `styles/color-preview.json`
+
+- Add value
+  Example:
+
+```js
+{
+   Light: {
+     primary: {
+       "8": '#FF0000',
+     }
+   }
+}
+```
+
+More: Install extenstion to preview color: [Color-Preivew](https://marketplace.visualstudio.com/items?itemName=hunghg255.color-preview)
 
 ## Commit Convention
 
