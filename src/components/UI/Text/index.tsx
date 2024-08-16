@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import classNames from 'classnames';
+import classNames from 'classnames'
 
-import { TColor } from '@/styles/color/color.variables';
+import type { TColor } from '@/styles/color/color.variables'
 
 interface TextProps {
-  children: React.ReactNode;
+  children: React.ReactNode
   type?:
     | 'heading1-extra-bold'
     | 'heading2-bold'
@@ -21,13 +21,13 @@ interface TextProps {
     | 'body2'
     | 'caption1-semi-bold'
     | 'caption2'
-    | undefined;
-  color?: TColor;
-  disabled?: boolean;
-  state?: null | 'disable';
-  className?: string;
-  onClick?: () => void;
-  element?: 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
+    | undefined
+  color?: TColor
+  disabled?: boolean
+  state?: null | 'disable'
+  className?: string
+  onClick?: () => void
+  element?: 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5'
 }
 
 const Text: React.FC<TextProps> = ({
@@ -35,11 +35,11 @@ const Text: React.FC<TextProps> = ({
   color,
   disabled = false,
   className = '',
-  onClick = () => {},
+  onClick = undefined,
   children,
   element = 'p',
 }) => {
-  const classes = classNames(type, color, { 'text-disable': disabled }, className);
+  const classes = classNames(type, color, { 'text-disable': disabled }, className)
 
   return React.createElement(
     element,
@@ -48,7 +48,7 @@ const Text: React.FC<TextProps> = ({
       onClick,
     },
     React.createElement(React.Fragment, undefined, children),
-  );
-};
+  )
+}
 
-export default Text;
+export default Text

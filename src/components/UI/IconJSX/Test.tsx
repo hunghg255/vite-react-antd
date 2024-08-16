@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-const Test = () => {
+function Test() {
   return (
     <>
       <svg>Hello Test</svg>
     </>
-  );
-};
+  )
+}
 
-export default Test;
+export default Test

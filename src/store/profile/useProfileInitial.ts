@@ -1,1 +1,1 @@
-export const useProfileInitial = () => {};
+export function useProfileInitial() {}

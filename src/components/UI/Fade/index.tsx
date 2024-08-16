@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-import { _popoverStyles, _popoverVisibleStyles, useFadeEffect } from '@/hooks/useFadeEffect';
+import { _popoverStyles, _popoverVisibleStyles, useFadeEffect } from '@/hooks/useFadeEffect'
 
-const Fade = ({ children, visible }: { children: React.ReactNode; visible: boolean }) => {
-  const [_isTransitioning, shouldBeVisible, refModal] = useFadeEffect(visible);
+function Fade({ children, visible }: { children: React.ReactNode, visible: boolean }) {
+  const [_isTransitioning, shouldBeVisible, refModal] = useFadeEffect(visible)
 
   return (
     <>
@@ -13,7 +13,7 @@ const Fade = ({ children, visible }: { children: React.ReactNode; visible: boole
         </div>
       )}
     </>
-  );
-};
+  )
+}
 
-export default Fade;
+export default Fade

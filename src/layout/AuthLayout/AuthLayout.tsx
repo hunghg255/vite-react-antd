@@ -1,17 +1,17 @@
-import { Suspense } from 'react';
+import { Suspense } from 'react'
 
-import { Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom'
 
-import styles from './index.module.scss';
+import styles from './index.module.scss'
 
-const AuthLayout = () => {
+function AuthLayout() {
   return (
     <Suspense fallback={undefined}>
       <div className={styles.authLayout}>
         <Outlet />
       </div>
     </Suspense>
-  );
-};
+  )
+}
 
-export default AuthLayout;
+export default AuthLayout

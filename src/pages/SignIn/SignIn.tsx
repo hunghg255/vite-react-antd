@@ -1,16 +1,13 @@
-import React from 'react';
+import { Form, Input } from 'antd'
+import { Helmet } from 'react-helmet'
+import { Link } from 'react-router-dom'
+import styles from './index.module.scss'
+import Button from '@/components/UI/Button/Button'
+import Text from '@/components/UI/Text'
 
-import { Form, Input } from 'antd';
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
-
-import ButtonPrimary from '@/components/UI/Button/ButtonPrimary';
-import Text from '@/components/UI/Text';
 // import { useAuth } from '@/store/auth/useAuth';
 
-import styles from './index.module.scss';
-
-const SignIn = () => {
+function SignIn() {
   return (
     <>
       <Helmet>
@@ -20,14 +17,14 @@ const SignIn = () => {
       <h1>{process.env.TITLE}</h1>
 
       <div className={styles.loginWrap}>
-        <img src='public/svg/logo.svg' alt='logo' />
-        <Text type='heading3-bold' className='text-center mb-20' element='h1'>
+        <img src="public/svg/logo.svg" alt="logo" />
+        <Text type="heading3-bold" className="text-center mb-20" element="h1">
           Đăng nhập vào IC Publisher
         </Text>
-        <Form layout='vertical'>
+        <Form layout="vertical">
           <Form.Item
-            name='email'
-            label='Email'
+            name="email"
+            label="Email"
             rules={[
               {
                 required: true,
@@ -39,12 +36,12 @@ const SignIn = () => {
               },
             ]}
           >
-            <Input placeholder='Nhập email' />
+            <Input placeholder="Nhập email" />
           </Form.Item>
 
           <Form.Item
-            name='password'
-            label='Mật khẩu'
+            name="password"
+            label="Mật khẩu"
             rules={[
               {
                 required: true,
@@ -56,18 +53,18 @@ const SignIn = () => {
               },
             ]}
           >
-            <Input placeholder='Mật khẩu' />
+            <Input placeholder="Mật khẩu" />
           </Form.Item>
 
-          <Text type='heading5-regular' color='primary-light' className='mb-20 text-right'>
-            <Link to='/forgot-password'>Quên mật khẩu?</Link>
+          <Text type="heading1-extra-bold" color="primary-100" className="mb-20 text-right">
+            <Link to="/forgot-password">Quên mật khẩu?</Link>
           </Text>
 
-          <ButtonPrimary htmlType='submit'>Đăng nhập</ButtonPrimary>
+          <Button htmlType="submit">Đăng nhập</Button>
         </Form>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default SignIn;
+export default SignIn

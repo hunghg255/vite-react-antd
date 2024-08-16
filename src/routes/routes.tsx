@@ -1,17 +1,16 @@
-import React, { Suspense } from 'react';
+import React, { Suspense } from 'react'
 
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter } from 'react-router-dom'
 
-import AppLayout from '@/layout/AppLayout/AppLayout';
-import AuthLayout from '@/layout/AuthLayout/AuthLayout';
-import MainLayout from '@/layout/MainLayout/MainLayout';
+import { ROUTE_PATH } from './route.constant'
+import AppLayout from '@/layout/AppLayout/AppLayout'
+import AuthLayout from '@/layout/AuthLayout/AuthLayout'
+import MainLayout from '@/layout/MainLayout/MainLayout'
 
-import { ROUTE_PATH } from './route.constant';
+const SignIn = React.lazy(() => import('@/pages/SignIn/SignIn'))
+const ForgotPassword = React.lazy(() => import('@/pages/ForgotPassword/ForgotPassword'))
 
-const SignIn = React.lazy(() => import('@/pages/SignIn/SignIn'));
-const ForgotPassword = React.lazy(() => import('@/pages/ForgotPassword/ForgotPassword'));
-
-const Report = React.lazy(() => import('@/pages/Report/Report'));
+const Report = React.lazy(() => import('@/pages/Report/Report'))
 
 export const router = createBrowserRouter([
   {
@@ -54,4 +53,4 @@ export const router = createBrowserRouter([
       },
     ],
   },
-]);
+])

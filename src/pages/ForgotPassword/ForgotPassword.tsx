@@ -1,16 +1,15 @@
-import React from 'react';
+import React from 'react'
 
-import { Form, Input } from 'antd';
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import { Form, Input } from 'antd'
+import { Helmet } from 'react-helmet'
+import { Link } from 'react-router-dom'
 
-import ButtonPrimary from '@/components/UI/Button/ButtonPrimary';
-import { Icon } from '@/components/UI/IconFont/Icon';
-import Text from '@/components/UI/Text';
+import styles from './index.module.scss'
+import ButtonPrimary from '@/components/UI/Button/ButtonPrimary'
+import { Icon } from '@/components/UI/IconFont/Icon'
+import Text from '@/components/UI/Text'
 
-import styles from './index.module.scss';
-
-const ForgotPassword = () => {
+function ForgotPassword() {
   return (
     <>
       <Helmet>
@@ -18,14 +17,14 @@ const ForgotPassword = () => {
       </Helmet>
 
       <div className={styles.loginWrap}>
-        <img src='public/svg/logo.svg' alt='logo' />
-        <Text type='heading3-bold' className='text-center mb-20' element='h1'>
+        <img src="public/svg/logo.svg" alt="logo" />
+        <Text type="heading3-bold" className="text-center mb-20" element="h1">
           Quên mật khẩu
         </Text>
-        <Form layout='vertical'>
+        <Form layout="vertical">
           <Form.Item
-            name='email'
-            label='Email'
+            name="email"
+            label="Email"
             rules={[
               {
                 required: true,
@@ -37,22 +36,24 @@ const ForgotPassword = () => {
               },
             ]}
           >
-            <Input placeholder='Nhập email' />
+            <Input placeholder="Nhập email" />
           </Form.Item>
 
-          <ButtonPrimary htmlType='submit' className='mb-20'>
+          <ButtonPrimary htmlType="submit" className="mb-20">
             Đăng nhập
           </ButtonPrimary>
 
-          <Text type='heading5-regular' color='cblack' className='flex-center'>
-            <Link to='/sign-in'>
-              <Icon icon='t4font-ic-eva_arrow-ios-back-fill' /> Quay lại đăng nhập
+          <Text type="heading5-regular" color="cblack" className="flex-center">
+            <Link to="/sign-in">
+              <Icon icon="t4font-ic-eva_arrow-ios-back-fill" />
+              {' '}
+              Quay lại đăng nhập
             </Link>
           </Text>
         </Form>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ForgotPassword;
+export default ForgotPassword

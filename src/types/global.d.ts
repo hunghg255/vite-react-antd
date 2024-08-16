@@ -1,6 +1,6 @@
 declare global {
   interface Window {
-    ENV: typeof process.env;
+    ENV: typeof process.env
   }
 }
-export {};
+export {}

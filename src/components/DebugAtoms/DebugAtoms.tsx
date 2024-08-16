@@ -1,9 +1,9 @@
-import { useAtomsDevtools } from 'jotai-devtools';
+import { useAtomsDevtools } from 'jotai-devtools'
 
 // Debug state jotai by React develop devtools
 // https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi
-export const DebugAtoms = () => {
-  useAtomsDevtools('root');
+export function DebugAtoms() {
+  useAtomsDevtools('root')
 
-  return <></>;
-};
+  return <></>
+}
