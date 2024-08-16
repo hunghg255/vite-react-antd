@@ -15,6 +15,7 @@
     "format": "prettier --write \"./src/**/*.{ts,tsx,json}\"",
     "analyze": "npm run lint && tsc && vite build --mode=analyze && source-map-explorer 'dist/assets/*.js'",
     "verify-commit": "verify-commit-msg",
+    "type-check": "tsc --noEmit",
     "prepare": "git-scm-hooks",
     "release": "bumpp -r",
     "gen-icon": "csvgtocss",

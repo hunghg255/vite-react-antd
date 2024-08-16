@@ -2,12 +2,10 @@ import React from 'react'
 
 import { Form, Input } from 'antd'
 import { Helmet } from 'react-helmet'
-import { Link } from 'react-router-dom'
 
 import styles from './index.module.scss'
-import ButtonPrimary from '@/components/UI/Button/ButtonPrimary'
-import { Icon } from '@/components/UI/IconFont/Icon'
 import Text from '@/components/UI/Text'
+import Button from '@/components/UI/Button/Button'
 
 function ForgotPassword() {
   return (
@@ -39,17 +37,17 @@ function ForgotPassword() {
             <Input placeholder="Nhập email" />
           </Form.Item>
 
-          <ButtonPrimary htmlType="submit" className="mb-20">
+          <Button htmlType="submit" className="mb-20">
             Đăng nhập
-          </ButtonPrimary>
+          </Button>
 
-          <Text type="heading5-regular" color="cblack" className="flex-center">
+          {/* <Text type="heading5-regular" color="cblack" className="flex-center">
             <Link to="/sign-in">
               <Icon icon="t4font-ic-eva_arrow-ios-back-fill" />
               {' '}
               Quay lại đăng nhập
             </Link>
-          </Text>
+          </Text> */}
         </Form>
       </div>
     </>
