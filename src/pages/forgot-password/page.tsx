@@ -7,7 +7,7 @@ import styles from './index.module.scss'
 import Text from '@/components/UI/Text'
 import Button from '@/components/UI/Button/Button'
 
-function ForgotPassword() {
+export function Component() {
   return (
     <>
       <Helmet>
@@ -15,7 +15,7 @@ function ForgotPassword() {
       </Helmet>
 
       <div className={styles.loginWrap}>
-        <img src="public/svg/logo.svg" alt="logo" />
+        <img src="/images/logo.png" alt="logo" />
         <Text type="heading3-bold" className="text-center mb-20" element="h1">
           Quên mật khẩu
         </Text>
@@ -53,5 +53,3 @@ function ForgotPassword() {
     </>
   )
 }
-
-export default ForgotPassword

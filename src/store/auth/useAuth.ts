@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 
-import { ROUTE_PATH } from './../../routes/route.constant'
+import { ROUTE_PATH } from '../../constants/route.constant'
 
 export interface IAuth {
   loading?: boolean

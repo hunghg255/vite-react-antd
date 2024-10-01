@@ -9,6 +9,7 @@ import ResizeImage from 'vite-plugin-resize-image/vite'
 import MinifyCssModule from 'vite-minify-css-module/vite'
 import ConsoleDebug from 'vite-console-debug/vite'
 import { visualizer } from 'rollup-plugin-visualizer'
+import pages from 'react-generate-pages'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -18,6 +19,7 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       react(),
+      pages(),
       EnvironmentPlugin('all'),
       checker({
         typescript: true,

@@ -70,6 +70,8 @@ More: Install extenstion to preview color: [Color-Preivew](https://marketplace.v
 8. Processing CSS: https://sass-lang.com/guide
 
 9. Routing: https://reactrouter.com/
+
+10. Generate page: https://github.com/hunghg255/react-generate-pages#readme
 ```
 
 ```md

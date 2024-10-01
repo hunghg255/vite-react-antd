@@ -1,12 +1,12 @@
-import { RouterProvider } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Toaster } from 'sonner'
 
-import { router } from './routes/routes'
+import routes from '~pages'
 
 function App() {
   return (
     <>
-      <RouterProvider router={router} />
+      <RouterProvider router={createBrowserRouter(routes)} />
       <Toaster position="top-center" />
     </>
   )

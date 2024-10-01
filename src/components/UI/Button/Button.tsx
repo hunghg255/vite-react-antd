@@ -34,7 +34,7 @@ export interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({
-  type = 'primary',
+  type = 'xhotel-primary',
   size = 'medium',
   children,
   className,

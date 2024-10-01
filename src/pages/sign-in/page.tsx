@@ -7,7 +7,7 @@ import Text from '@/components/UI/Text'
 
 // import { useAuth } from '@/store/auth/useAuth';
 
-function SignIn() {
+export function Component() {
   return (
     <>
       <Helmet>
@@ -17,7 +17,7 @@ function SignIn() {
       <h1>{process.env.TITLE}</h1>
 
       <div className={styles.loginWrap}>
-        <img src="public/svg/logo.svg" alt="logo" />
+        <img src="/images/logo.png" alt="logo" />
         <Text type="heading3-bold" className="text-center mb-20" element="h1">
           Đăng nhập vào IC Publisher
         </Text>
@@ -66,5 +66,3 @@ function SignIn() {
     </>
   )
 }
-
-export default SignIn
