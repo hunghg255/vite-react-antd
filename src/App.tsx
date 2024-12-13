@@ -1,7 +1,7 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import { Toaster } from 'sonner'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Toaster } from 'sonner';
 
-import routes from '~pages'
+import routes from '~pages';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <RouterProvider router={createBrowserRouter(routes)} />
       <Toaster position="top-center" />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

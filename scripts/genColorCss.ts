@@ -1,11 +1,11 @@
-import fs from 'node:fs'
+import fs from 'node:fs';
 
-import json from '../src/styles/color/color-preview.json'
+import json from '../src/styles/color/color-preview.json';
 
-const light = json.Light
+const light = json.Light;
 
 function genCss() {
-  const keys = Object.keys(light)
+  const keys = Object.keys(light);
 
   const template = `
 /* ----------------------------------------------------------- */
@@ -18,39 +18,39 @@ function genCss() {
 :root {
   ${keys
     .map((v) => {
-      const value = light[v]
+      const value = light[v];
 
       return Object.keys(value)
         .map((k) => {
-          return `--${v}-${k}: ${value[k]};`
+          return `--${v}-${k}: ${value[k]};`;
         })
-        .join('\n')
+        .join('\n');
     })
     .join('\n')}
 }
 
 ${keys
-    .map((v) => {
-      const value = light[v]
+  .map((v) => {
+    const value = light[v];
 
-      return Object.keys(value)
-        .map((k) => {
-          return `.${v}-${k} {
+    return Object.keys(value)
+      .map((k) => {
+        return `.${v}-${k} {
       color: ${value[k]};
-    };`
-        })
-        .join('\n')
-    })
-    .join('\n')}
+    };`;
+      })
+      .join('\n');
+  })
+  .join('\n')}
 
 
-`
+`;
 
-  fs.writeFileSync('src/styles/color/color.variables.css', template)
+  fs.writeFileSync('src/styles/color/color.variables.css', template);
 }
 
 function genTypes() {
-  const keys = Object.keys(light)
+  const keys = Object.keys(light);
 
   const templateTs = `
 /* ----------------------------------------------------------- */
@@ -62,44 +62,47 @@ function genTypes() {
 
 export type TColor = ${keys
     .map((v) => {
-      const value = light[v]
+      const value = light[v];
 
       return Object.keys(value)
         .map((k) => {
-          return `"${v}-${k}"`
+          return `"${v}-${k}"`;
         })
-        .join(' | ')
+        .join(' | ');
     })
     .join(' | ')};
-`
+`;
 
-  fs.writeFileSync('src/styles/color/color.variables.ts', templateTs)
+  fs.writeFileSync('src/styles/color/color.variables.ts', templateTs);
 }
 
 function genColorPreviewVscode() {
-  const keys = Object.keys(light)
+  const keys = Object.keys(light);
 
   const templateTs = `
 {
   "Light": {
     ${keys
-    .map((v) => {
-      const value = light[v]
+      .map((v) => {
+        const value = light[v];
 
-      return Object.keys(value)
-        .map((k) => {
-          return [`"${v}-${k}": "${value[k]}"`, `"--${v}-${k}": "${value[k]}"`].join(',\n')
-        })
-        .join(',\n')
-    })
-    .join(',\n')}
+        return Object.keys(value)
+          .map((k) => {
+            return [
+              `"${v}-${k}": "${value[k]}"`,
+              `"--${v}-${k}": "${value[k]}"`,
+            ].join(',\n');
+          })
+          .join(',\n');
+      })
+      .join(',\n')}
   }
 }
-`
+`;
 
-  fs.writeFileSync('src/styles/color/color-preview-vscode.json', templateTs)
+  fs.writeFileSync('src/styles/color/color-preview-vscode.json', templateTs);
 }
 
-genCss()
-genTypes()
-genColorPreviewVscode()
+genCss();
+genTypes();
+genColorPreviewVscode();

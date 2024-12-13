@@ -1,7 +1,5 @@
-import AppLayout from '@/layout/AppLayout/AppLayout'
+import AppLayout from '@/layout/AppLayout/AppLayout';
 
 export function Component() {
-  return (
-    <AppLayout />
-  )
+  return <AppLayout />;
 }

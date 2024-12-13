@@ -1,5 +1,3 @@
 export function Component() {
-  return (
-    <div>Not Found AA</div>
-  )
+  return <div>Not Found AA</div>;
 }

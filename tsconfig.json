@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "eslint.config.js", "svgtocss.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

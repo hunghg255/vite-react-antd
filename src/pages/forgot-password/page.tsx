@@ -1,19 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-import { Form, Input } from 'antd'
-import { Helmet } from 'react-helmet'
+import { Form, Input } from 'antd';
 
-import styles from './index.module.scss'
-import Text from '@/components/UI/Text'
-import Button from '@/components/UI/Button/Button'
+import Button from '@/components/UI/Button/Button';
+import Text from '@/components/UI/Text';
+
+import styles from './index.module.scss';
 
 export function Component() {
   return (
     <>
-      <Helmet>
-        <title>Forgot Password</title>
-      </Helmet>
-
       <div className={styles.loginWrap}>
         <img src="/images/logo.png" alt="logo" />
         <Text type="heading3-bold" className="text-center mb-20" element="h1">
@@ -51,5 +47,5 @@ export function Component() {
         </Form>
       </div>
     </>
-  )
+  );
 }

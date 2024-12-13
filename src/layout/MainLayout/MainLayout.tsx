@@ -1,6 +1,6 @@
-import { Suspense } from 'react'
+import { Suspense } from 'react';
 
-import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
 
 function MainLayout() {
   return (
@@ -9,7 +9,7 @@ function MainLayout() {
 
       <Outlet />
     </Suspense>
-  )
+  );
 }
 
-export default MainLayout
+export default MainLayout;

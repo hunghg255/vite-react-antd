@@ -1,8 +1,8 @@
-import { Suspense } from 'react'
+import { Suspense } from 'react';
 
-import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
 
-import styles from './index.module.scss'
+import styles from './index.module.scss';
 
 function AuthLayout() {
   return (
@@ -11,7 +11,7 @@ function AuthLayout() {
         <Outlet />
       </div>
     </Suspense>
-  )
+  );
 }
 
-export default AuthLayout
+export default AuthLayout;

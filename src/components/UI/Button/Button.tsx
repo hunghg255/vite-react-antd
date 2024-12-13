@@ -1,9 +1,9 @@
-import type { MouseEvent } from 'react'
-import React from 'react'
+import type { MouseEvent } from 'react';
+import React from 'react';
 
-import classNames from 'classnames'
+import classNames from 'classnames';
 
-import Loading from '@/components/UI/Loading'
+import Loading from '@/components/UI/Loading';
 
 export interface ButtonProps {
   type?:
@@ -18,19 +18,19 @@ export interface ButtonProps {
     | 'xhome-purple-primary'
     | 'xhome-purple-secondary'
     | 'xhome-purple-negative-primary'
-    | 'xhome-purple-negative-secondary'
+    | 'xhome-purple-negative-secondary';
 
-  size?: 'large' | 'medium'
-  isFullWidth?: boolean
-  children: React.ReactNode | string
-  prefix?: React.ReactNode | string
-  suffix?: React.ReactNode | string
-  className?: string
-  onClick?: any
-  loading?: boolean
-  disabled?: boolean
-  htmlType?: 'button' | 'submit'
-  style?: React.CSSProperties
+  size?: 'large' | 'medium';
+  isFullWidth?: boolean;
+  children: React.ReactNode | string;
+  prefix?: React.ReactNode | string;
+  suffix?: React.ReactNode | string;
+  className?: string;
+  onClick?: any;
+  loading?: boolean;
+  disabled?: boolean;
+  htmlType?: 'button' | 'submit';
+  style?: React.CSSProperties;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -57,17 +57,17 @@ const Button: React.FC<ButtonProps> = ({
     { btnSuffix: !!suffix },
     { fullWidth: isFullWidth },
     { [size]: !!size },
-  )
+  );
 
   const onClickBtn = (e: MouseEvent<HTMLButtonElement>) => {
     if (disabled || loading) {
-      return
+      return;
     }
 
     if (onClick) {
-      onClick(e)
+      onClick(e);
     }
-  }
+  };
 
   return (
     <button
@@ -84,7 +84,7 @@ const Button: React.FC<ButtonProps> = ({
 
       {loading && <Loading />}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

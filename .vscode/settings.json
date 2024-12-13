@@ -1,13 +1,14 @@
 {
   "editor.tabSize": 2,
   "editor.rulers": [100],
-  "editor.formatOnSave": true,
   "git.ignoreLimitWarning": true,
-  "editor.quickSuggestions": {
-    "strings": true
-  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
+  },
+  "editor.quickSuggestions": {
+    "strings": true
   },
   "workbench.tree.indent": 14,
   "workbench.tree.renderIndentGuides": "always",
@@ -16,7 +17,9 @@
   },
 
   "iconify.color": "#ddd",
-  "iconify.customCollectionJsonPaths": ["./public/svgtocss/icon-collection.json"],
+  "iconify.customCollectionJsonPaths": [
+    "./public/svgtocss/icon-collection.json"
+  ],
   "iconify.delimiters": ["-"],
   "iconify.prefixes": ["", "icon"],
   "iconify.inplace": false,

@@ -1,19 +1,16 @@
-import { Form, Input } from 'antd'
-import { Helmet } from 'react-helmet'
-import { Link } from 'react-router-dom'
-import styles from './index.module.scss'
-import Button from '@/components/UI/Button/Button'
-import Text from '@/components/UI/Text'
+import { Form, Input } from 'antd';
+import { Link } from 'react-router-dom';
+
+import Button from '@/components/UI/Button/Button';
+import Text from '@/components/UI/Text';
+
+import styles from './index.module.scss';
 
 // import { useAuth } from '@/store/auth/useAuth';
 
 export function Component() {
   return (
     <>
-      <Helmet>
-        <title>Sign In</title>
-      </Helmet>
-
       <h1>{process.env.TITLE}</h1>
 
       <div className={styles.loginWrap}>
@@ -56,7 +53,11 @@ export function Component() {
             <Input placeholder="Mật khẩu" />
           </Form.Item>
 
-          <Text type="heading1-extra-bold" color="primary-100" className="mb-20 text-right">
+          <Text
+            type="heading1-extra-bold"
+            color="primary-100"
+            className="mb-20 text-right"
+          >
             <Link to="/forgot-password">Quên mật khẩu?</Link>
           </Text>
 
@@ -64,5 +65,5 @@ export function Component() {
         </Form>
       </div>
     </>
-  )
+  );
 }

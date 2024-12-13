@@ -1,20 +1,21 @@
-import * as path from 'node:path'
-import react from '@vitejs/plugin-react'
-import { defineConfig } from 'vite'
-import checker from 'vite-plugin-checker'
-import EnvironmentPlugin from 'vite-plugin-environment'
-import Printer from 'vite-host-qrcode/vite'
+import * as path from 'node:path';
+
+import react from '@vitejs/plugin-react';
+import pages from 'react-generate-pages';
+import { visualizer } from 'rollup-plugin-visualizer';
+import { defineConfig } from 'vite';
+import ConsoleDebug from 'vite-console-debug/vite';
+import Printer from 'vite-host-qrcode/vite';
+import MinifyCssModule from 'vite-minify-css-module/vite';
+import checker from 'vite-plugin-checker';
+import EnvironmentPlugin from 'vite-plugin-environment';
 // import webfontDownload from 'vite-plugin-webfont-dl';
-import ResizeImage from 'vite-plugin-resize-image/vite'
-import MinifyCssModule from 'vite-minify-css-module/vite'
-import ConsoleDebug from 'vite-console-debug/vite'
-import { visualizer } from 'rollup-plugin-visualizer'
-import pages from 'react-generate-pages'
+import ResizeImage from 'vite-plugin-resize-image/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  const isDev = mode !== 'production'
-  const isAnalyze = mode === 'analyze'
+  const isDev = mode !== 'production';
+  const isAnalyze = mode === 'analyze';
 
   return {
     plugins: [
@@ -31,7 +32,7 @@ export default defineConfig(({ mode }) => {
               text: `  ${green('➜')}  ${bold('Font Icon:')} ${bold(
                 cyan('http://localhost:4005/public/t4font/index.html'),
               )}`,
-            }
+            };
           },
         ],
       }),
@@ -99,5 +100,5 @@ export default defineConfig(({ mode }) => {
     preview: {
       port: 4005,
     },
-  }
-})
+  };
+});

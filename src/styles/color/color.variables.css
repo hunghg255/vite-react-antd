@@ -1,4 +1,3 @@
-
 /* ----------------------------------------------------------- */
 /* WARNING: NOT MODIFY THIS FILE */
 /* ----------------------------------------------------------- */
@@ -8,222 +7,220 @@
 
 :root {
   --primary-8: rgba(62, 95, 44, 0.08);
---primary-50: #F3F8ED;
---primary-100: #F3F8ED;
---primary-200: #CAE1B5;
---primary-300: #A8CC8A;
---primary-400: #6B9C46;
---primary-main: #405F2D;
---x-home-8: rgba(117, 157, 62, 0.08);
---x-home-50: #F5F9EC;
---x-home-100: #E7F1D6;
---x-home-200: #D2E4B2;
---x-home-300: #B3D185;
---x-home-400: #97BD5E;
---x-home-main: #759D3F;
---x-cell-8: rgba(188, 111, 198, 0.08);
---x-cell-50: #FBF7FC;
---x-cell-100: #F7EEF9;
---x-cell-200: #EEDBF3;
---x-cell-300: #E2BEE9;
---x-cell-400: #BC6FC6;
---x-cell-main: #9F4FA8;
---neutral-50: #F6F6F6;
---neutral-100: #E7E7E7;
---neutral-200: #D1D1D1;
---neutral-300: #BCBCBC;
---neutral-400: #888888;
---neutral-500: #6D6D6D;
---neutral-600: #5D5D5D;
---neutral-700: #4F4F4F;
---neutral-800: #454545;
---neutral-900: #131313;
---text-primary: #131313;
---text-secondary: #6D6D6D;
---text-disabled: #BCBCBC;
---text-inverse: #F6F6F6;
---background-default: #FFFFFF;
---background-gray: #E7E7E7;
---background-beige: #F9F6F1;
---background-footer: #454545;
---background-disabled: #E7E7E7;
---divider-default: #E7E7E7;
---outlined-default: #BCBCBC;
---outlined-disabled: #D1D1D1;
---success-lightest: #E7F1D6;
---success-light: #97BD5E;
---success-main: #759D3E;
---success-dark: #3E5F2C;
---error-lightest: #FDE3E4;
---error-light: #EA4951;
---error-main: #D9363E;
---error-dark: #CD2028;
---warning-light: #FFF2D8;
---warning-main: #FF9E00;
---warning-dark: #CB8903;
+  --primary-50: #f3f8ed;
+  --primary-100: #f3f8ed;
+  --primary-200: #cae1b5;
+  --primary-300: #a8cc8a;
+  --primary-400: #6b9c46;
+  --primary-main: #405f2d;
+  --x-home-8: rgba(117, 157, 62, 0.08);
+  --x-home-50: #f5f9ec;
+  --x-home-100: #e7f1d6;
+  --x-home-200: #d2e4b2;
+  --x-home-300: #b3d185;
+  --x-home-400: #97bd5e;
+  --x-home-main: #759d3f;
+  --x-cell-8: rgba(188, 111, 198, 0.08);
+  --x-cell-50: #fbf7fc;
+  --x-cell-100: #f7eef9;
+  --x-cell-200: #eedbf3;
+  --x-cell-300: #e2bee9;
+  --x-cell-400: #bc6fc6;
+  --x-cell-main: #9f4fa8;
+  --neutral-50: #f6f6f6;
+  --neutral-100: #e7e7e7;
+  --neutral-200: #d1d1d1;
+  --neutral-300: #bcbcbc;
+  --neutral-400: #888888;
+  --neutral-500: #6d6d6d;
+  --neutral-600: #5d5d5d;
+  --neutral-700: #4f4f4f;
+  --neutral-800: #454545;
+  --neutral-900: #131313;
+  --text-primary: #131313;
+  --text-secondary: #6d6d6d;
+  --text-disabled: #bcbcbc;
+  --text-inverse: #f6f6f6;
+  --background-default: #ffffff;
+  --background-gray: #e7e7e7;
+  --background-beige: #f9f6f1;
+  --background-footer: #454545;
+  --background-disabled: #e7e7e7;
+  --divider-default: #e7e7e7;
+  --outlined-default: #bcbcbc;
+  --outlined-disabled: #d1d1d1;
+  --success-lightest: #e7f1d6;
+  --success-light: #97bd5e;
+  --success-main: #759d3e;
+  --success-dark: #3e5f2c;
+  --error-lightest: #fde3e4;
+  --error-light: #ea4951;
+  --error-main: #d9363e;
+  --error-dark: #cd2028;
+  --warning-light: #fff2d8;
+  --warning-main: #ff9e00;
+  --warning-dark: #cb8903;
 }
 
 .primary-8 {
-      color: rgba(62, 95, 44, 0.08);
-    };
+  color: rgba(62, 95, 44, 0.08);
+}
 .primary-50 {
-      color: #F3F8ED;
-    };
+  color: #f3f8ed;
+}
 .primary-100 {
-      color: #F3F8ED;
-    };
+  color: #f3f8ed;
+}
 .primary-200 {
-      color: #CAE1B5;
-    };
+  color: #cae1b5;
+}
 .primary-300 {
-      color: #A8CC8A;
-    };
+  color: #a8cc8a;
+}
 .primary-400 {
-      color: #6B9C46;
-    };
+  color: #6b9c46;
+}
 .primary-main {
-      color: #405F2D;
-    };
+  color: #405f2d;
+}
 .x-home-8 {
-      color: rgba(117, 157, 62, 0.08);
-    };
+  color: rgba(117, 157, 62, 0.08);
+}
 .x-home-50 {
-      color: #F5F9EC;
-    };
+  color: #f5f9ec;
+}
 .x-home-100 {
-      color: #E7F1D6;
-    };
+  color: #e7f1d6;
+}
 .x-home-200 {
-      color: #D2E4B2;
-    };
+  color: #d2e4b2;
+}
 .x-home-300 {
-      color: #B3D185;
-    };
+  color: #b3d185;
+}
 .x-home-400 {
-      color: #97BD5E;
-    };
+  color: #97bd5e;
+}
 .x-home-main {
-      color: #759D3F;
-    };
+  color: #759d3f;
+}
 .x-cell-8 {
-      color: rgba(188, 111, 198, 0.08);
-    };
+  color: rgba(188, 111, 198, 0.08);
+}
 .x-cell-50 {
-      color: #FBF7FC;
-    };
+  color: #fbf7fc;
+}
 .x-cell-100 {
-      color: #F7EEF9;
-    };
+  color: #f7eef9;
+}
 .x-cell-200 {
-      color: #EEDBF3;
-    };
+  color: #eedbf3;
+}
 .x-cell-300 {
-      color: #E2BEE9;
-    };
+  color: #e2bee9;
+}
 .x-cell-400 {
-      color: #BC6FC6;
-    };
+  color: #bc6fc6;
+}
 .x-cell-main {
-      color: #9F4FA8;
-    };
+  color: #9f4fa8;
+}
 .neutral-50 {
-      color: #F6F6F6;
-    };
+  color: #f6f6f6;
+}
 .neutral-100 {
-      color: #E7E7E7;
-    };
+  color: #e7e7e7;
+}
 .neutral-200 {
-      color: #D1D1D1;
-    };
+  color: #d1d1d1;
+}
 .neutral-300 {
-      color: #BCBCBC;
-    };
+  color: #bcbcbc;
+}
 .neutral-400 {
-      color: #888888;
-    };
+  color: #888888;
+}
 .neutral-500 {
-      color: #6D6D6D;
-    };
+  color: #6d6d6d;
+}
 .neutral-600 {
-      color: #5D5D5D;
-    };
+  color: #5d5d5d;
+}
 .neutral-700 {
-      color: #4F4F4F;
-    };
+  color: #4f4f4f;
+}
 .neutral-800 {
-      color: #454545;
-    };
+  color: #454545;
+}
 .neutral-900 {
-      color: #131313;
-    };
+  color: #131313;
+}
 .text-primary {
-      color: #131313;
-    };
+  color: #131313;
+}
 .text-secondary {
-      color: #6D6D6D;
-    };
+  color: #6d6d6d;
+}
 .text-disabled {
-      color: #BCBCBC;
-    };
+  color: #bcbcbc;
+}
 .text-inverse {
-      color: #F6F6F6;
-    };
+  color: #f6f6f6;
+}
 .background-default {
-      color: #FFFFFF;
-    };
+  color: #ffffff;
+}
 .background-gray {
-      color: #E7E7E7;
-    };
+  color: #e7e7e7;
+}
 .background-beige {
-      color: #F9F6F1;
-    };
+  color: #f9f6f1;
+}
 .background-footer {
-      color: #454545;
-    };
+  color: #454545;
+}
 .background-disabled {
-      color: #E7E7E7;
-    };
+  color: #e7e7e7;
+}
 .divider-default {
-      color: #E7E7E7;
-    };
+  color: #e7e7e7;
+}
 .outlined-default {
-      color: #BCBCBC;
-    };
+  color: #bcbcbc;
+}
 .outlined-disabled {
-      color: #D1D1D1;
-    };
+  color: #d1d1d1;
+}
 .success-lightest {
-      color: #E7F1D6;
-    };
+  color: #e7f1d6;
+}
 .success-light {
-      color: #97BD5E;
-    };
+  color: #97bd5e;
+}
 .success-main {
-      color: #759D3E;
-    };
+  color: #759d3e;
+}
 .success-dark {
-      color: #3E5F2C;
-    };
+  color: #3e5f2c;
+}
 .error-lightest {
-      color: #FDE3E4;
-    };
+  color: #fde3e4;
+}
 .error-light {
-      color: #EA4951;
-    };
+  color: #ea4951;
+}
 .error-main {
-      color: #D9363E;
-    };
+  color: #d9363e;
+}
 .error-dark {
-      color: #CD2028;
-    };
+  color: #cd2028;
+}
 .warning-light {
-      color: #FFF2D8;
-    };
+  color: #fff2d8;
+}
 .warning-main {
-      color: #FF9E00;
-    };
+  color: #ff9e00;
+}
 .warning-dark {
-      color: #CB8903;
-    };
-
-
+  color: #cb8903;
+}

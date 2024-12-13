@@ -1,16 +1,16 @@
-/* eslint-disable unused-imports/no-unused-vars */
-import { Row } from 'antd'
-import classNames from 'classnames'
-import { toast as t } from 'sonner'
+import { Row } from 'antd';
+import classNames from 'classnames';
+import { toast as t } from 'sonner';
 
 // import { Icon } from '~components/UI/IconFont/Icon';
 
-import styles from './index.module.scss'
-import Text from '@/components/UI/Text'
+import Text from '@/components/UI/Text';
+
+import styles from './index.module.scss';
 
 export const toast = {
   success: (message: string) => {
-    t.custom(id => (
+    t.custom(() => (
       <Row
         align="middle"
         justify="space-between"
@@ -29,11 +29,11 @@ export const toast = {
         </Row>
         {/* <Icon icon='t4font-ic-close' onClick={() => t.dismiss(id)} /> */}
       </Row>
-    ))
+    ));
   },
 
   error: (message: string) => {
-    t.custom(id => (
+    t.custom(() => (
       <Row
         align="middle"
         justify="space-between"
@@ -52,6 +52,6 @@ export const toast = {
         </Row>
         {/* <Icon icon='t4font-ic-close' onClick={() => t.dismiss(id)} /> */}
       </Row>
-    ))
+    ));
   },
-}
+};
