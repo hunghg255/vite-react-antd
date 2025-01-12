@@ -49,7 +49,7 @@
     "@vitejs/plugin-react": "^4.3.4",
     "antd-form-devtools": "^1.0.2",
     "bumpp": "^9.8.1",
-    "csvgtocss": "^0.1.1",
+    "csvgtocss": "^0.1.2",
     "eslint": "^9.16.0",
     "esno": "^4.8.0",
     "git-scm-hooks": "^0.2.0",
