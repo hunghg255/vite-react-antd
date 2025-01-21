@@ -13,17 +13,21 @@ export const toast = {
     t.custom(() => (
       <Row
         align="middle"
+        className={classNames(styles.msg, styles.msgSuccess)}
         justify="space-between"
         wrap={false}
-        className={classNames(styles.msg, styles.msgSuccess)}
       >
-        <Row align="middle" wrap={false}>
+        <Row align="middle"
+          wrap={false}
+        >
           {/* <Icon
             icon='t4font-check-circle-fill'
             color='success-main'
             onClick={() => t.dismiss(id)}
           /> */}
-          <Text type="caption2" color="text-primary">
+          <Text color="text-primary"
+            type="caption2"
+          >
             {message}
           </Text>
         </Row>
@@ -36,17 +40,21 @@ export const toast = {
     t.custom(() => (
       <Row
         align="middle"
+        className={classNames(styles.msg, styles.msgError)}
         justify="space-between"
         wrap={false}
-        className={classNames(styles.msg, styles.msgError)}
       >
-        <Row align="middle" wrap={false}>
+        <Row align="middle"
+          wrap={false}
+        >
           {/* <Icon
             icon='t4font-ic-close-circle-fill'
             color='error-main'
             onClick={() => t.dismiss(id)}
           /> */}
-          <Text type="caption2" color="text-primary">
+          <Text color="text-primary"
+            type="caption2"
+          >
             {message}
           </Text>
         </Row>

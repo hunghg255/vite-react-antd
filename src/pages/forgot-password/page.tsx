@@ -11,14 +11,19 @@ export function Component() {
   return (
     <>
       <div className={styles.loginWrap}>
-        <img src="/images/logo.png" alt="logo" />
-        <Text type="heading3-bold" className="text-center mb-20" element="h1">
+        <img alt="logo"
+          src="/images/logo.png"
+        />
+        <Text className="text-center mb-20"
+          element="h1"
+          type="heading3-bold"
+        >
           Quên mật khẩu
         </Text>
         <Form layout="vertical">
           <Form.Item
-            name="email"
             label="Email"
+            name="email"
             rules={[
               {
                 required: true,
@@ -33,7 +38,9 @@ export function Component() {
             <Input placeholder="Nhập email" />
           </Form.Item>
 
-          <Button htmlType="submit" className="mb-20">
+          <Button className="mb-20"
+            htmlType="submit"
+          >
             Đăng nhập
           </Button>
 

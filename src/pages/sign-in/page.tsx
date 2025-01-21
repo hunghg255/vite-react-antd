@@ -14,14 +14,20 @@ export function Component() {
       <h1>{process.env.TITLE}</h1>
 
       <div className={styles.loginWrap}>
-        <img src="/images/logo.png" alt="logo" />
-        <Text type="heading3-bold" className="text-center mb-20" element="h1">
+        <img alt="logo"
+          src="/images/logo.png"
+        />
+        <Text
+          className="text-center mb-20"
+          element="h1"
+          type="heading3-bold"
+        >
           Đăng nhập vào IC Publisher
         </Text>
         <Form layout="vertical">
           <Form.Item
-            name="email"
             label="Email"
+            name="email"
             rules={[
               {
                 required: true,
@@ -37,8 +43,8 @@ export function Component() {
           </Form.Item>
 
           <Form.Item
-            name="password"
             label="Mật khẩu"
+            name="password"
             rules={[
               {
                 required: true,
@@ -54,9 +60,9 @@ export function Component() {
           </Form.Item>
 
           <Text
-            type="heading1-extra-bold"
-            color="primary-100"
             className="mb-20 text-right"
+            color="primary-100"
+            type="heading1-extra-bold"
           >
             <Link to="/forgot-password">Quên mật khẩu?</Link>
           </Text>

@@ -73,8 +73,8 @@ const Button: React.FC<ButtonProps> = ({
     <button
       className={classes}
       onClick={onClickBtn}
-      type={disabled || loading ? 'button' : htmlType}
       style={style}
+      type={disabled || loading ? 'button' : htmlType}
     >
       {prefix && prefix}
 

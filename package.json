@@ -12,8 +12,7 @@
     "preview": "vite preview --host",
     "start": "npm run build && vite preview",
     "lint": "eslint src --quiet",
-    "fix": "eslint --fix src && prettier --write src",
-    "format": "prettier --write \"./src/**/*.{ts,tsx,json}\"",
+    "fix": "eslint --fix src",
     "analyze": "vite build --mode=analyze && source-map-explorer 'dist/assets/*.js'",
     "verify-commit": "verify-commit-msg",
     "type-check": "tsc --noEmit",
@@ -41,7 +40,7 @@
     "umi-request": "^1.4.0"
   },
   "devDependencies": {
-    "@hunghg255/eslint-config": "^0.0.3",
+    "@hunghg255/eslint-config": "^0.0.10",
     "@total-typescript/ts-reset": "^0.5.1",
     "@types/node": "^20.17.9",
     "@types/react": "^19.0.0",
@@ -53,7 +52,6 @@
     "eslint": "^9.16.0",
     "esno": "^4.8.0",
     "git-scm-hooks": "^0.2.0",
-    "prettier": "^3.4.2",
     "react-generate-pages": "^0.0.1",
     "rollup-plugin-visualizer": "^5.12.0",
     "sass": "^1.82.0",
