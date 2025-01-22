@@ -58,8 +58,8 @@ importers:
         version: 1.4.0
     devDependencies:
       '@hunghg255/eslint-config':
-        specifier: ^0.0.10
-        version: 0.0.10(@typescript-eslint/eslint-plugin@8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2)
+        specifier: ^0.0.11
+        version: 0.0.11(@typescript-eslint/eslint-plugin@8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2)
       '@total-typescript/ts-reset':
         specifier: ^0.5.1
         version: 0.5.1
@@ -1140,8 +1140,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@hunghg255/eslint-config@0.0.10':
-    resolution: {integrity: sha512-GU6cWIql7YbWYHZiYVIjQkIaZnVxJ60KL7YEjWO043lr6XTMBNOKSNOkBIvi7JrFzxv8xz7n63VsEHyoBOj2kA==}
+  '@hunghg255/eslint-config@0.0.11':
+    resolution: {integrity: sha512-cquYgMdK1ZVd5WPTAS1JD7TLzo8gqsdDdjB3d3lYoDBFiVcffnzysCO8ZZNrTM5ouvOYaIqnJu/Mhnhf7KEW/w==}
 
   '@iconify/tools@4.1.1':
     resolution: {integrity: sha512-Hybu/HGhv6T8nLQhiG9rKx+ekF7NNpPOEQAy7JRSKht3s3dcFSsPccYzk24Znc9MTxrR6Gak3cg6CPP5dyvS2Q==}
@@ -5975,7 +5975,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@hunghg255/eslint-config@0.0.10(@typescript-eslint/eslint-plugin@8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2)':
+  '@hunghg255/eslint-config@0.0.11(@typescript-eslint/eslint-plugin@8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2)':
     dependencies:
       '@eslint-types/unicorn': 52.0.0
       '@eslint/js': 9.18.0
