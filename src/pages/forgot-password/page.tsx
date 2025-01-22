@@ -14,12 +14,14 @@ export function Component() {
         <img alt="logo"
           src="/images/logo.png"
         />
+
         <Text className="text-center mb-20"
           element="h1"
           type="heading3-bold"
         >
           Quên mật khẩu
         </Text>
+
         <Form layout="vertical">
           <Form.Item
             label="Email"

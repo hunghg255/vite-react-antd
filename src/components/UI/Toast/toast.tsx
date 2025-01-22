@@ -31,6 +31,7 @@ export const toast = {
             {message}
           </Text>
         </Row>
+
         {/* <Icon icon='t4font-ic-close' onClick={() => t.dismiss(id)} /> */}
       </Row>
     ));
@@ -58,6 +59,7 @@ export const toast = {
             {message}
           </Text>
         </Row>
+
         {/* <Icon icon='t4font-ic-close' onClick={() => t.dismiss(id)} /> */}
       </Row>
     ));

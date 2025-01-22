@@ -11,12 +11,15 @@ import styles from './index.module.scss';
 export function Component() {
   return (
     <>
-      <h1>{process.env.TITLE}</h1>
+      <h1>
+        {process.env.TITLE}
+      </h1>
 
       <div className={styles.loginWrap}>
         <img alt="logo"
           src="/images/logo.png"
         />
+
         <Text
           className="text-center mb-20"
           element="h1"
@@ -24,6 +27,7 @@ export function Component() {
         >
           Đăng nhập vào IC Publisher
         </Text>
+
         <Form layout="vertical">
           <Form.Item
             label="Email"
@@ -64,10 +68,14 @@ export function Component() {
             color="primary-100"
             type="heading1-extra-bold"
           >
-            <Link to="/forgot-password">Quên mật khẩu?</Link>
+            <Link to="/forgot-password">
+              Quên mật khẩu?
+            </Link>
           </Text>
 
-          <Button htmlType="submit">Đăng nhập</Button>
+          <Button htmlType="submit">
+            Đăng nhập
+          </Button>
         </Form>
       </div>
     </>

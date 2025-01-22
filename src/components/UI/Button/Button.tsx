@@ -77,11 +77,8 @@ const Button: React.FC<ButtonProps> = ({
       type={disabled || loading ? 'button' : htmlType}
     >
       {prefix && prefix}
-
       {!loading && children}
-
       {suffix && suffix}
-
       {loading && <Loading />}
     </button>
   );
