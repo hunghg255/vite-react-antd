@@ -34,7 +34,7 @@ importers:
         version: 2.7.1(encoding@0.1.13)
       jotai:
         specifier: ^1.13.1
-        version: 1.13.1(@babel/core@7.25.9)(@babel/template@7.25.9)(jotai-devtools@0.1.0)(react@19.0.0)
+        version: 1.13.1(@babel/core@7.26.0)(@babel/template@7.25.9)(jotai-devtools@0.1.0)(react@19.0.0)
       jotai-devtools:
         specifier: ^0.1.0
         version: 0.1.0(jotai@1.13.1)(react@19.0.0)(redux@5.0.1)
@@ -58,8 +58,8 @@ importers:
         version: 1.4.0
     devDependencies:
       '@hunghg255/eslint-config':
-        specifier: ^0.0.15
-        version: 0.0.15(@typescript-eslint/eslint-plugin@8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2)
+        specifier: ^0.0.16
+        version: 0.0.16(@typescript-eslint/eslint-plugin@8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2)
       '@total-typescript/ts-reset':
         specifier: ^0.5.1
         version: 0.5.1
@@ -1143,8 +1143,8 @@ packages:
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
 
-  '@hunghg255/eslint-config@0.0.15':
-    resolution: {integrity: sha512-dBCDW8dsiCvOqbu8oU7Tes5CnXVVSl+242ydalOPNRkTqCRAWt4B8zdfjNQiIF/r9X4XM/sqyE8oSUAE/OkMtw==}
+  '@hunghg255/eslint-config@0.0.16':
+    resolution: {integrity: sha512-XUPaeQUtl5A0uAdWuO05zQzqRXf7PwhLu3eAHzIFuBO+qcfb0uLYtd9SemJbzRcKD94d/HT972tjKWQJnCn0Lg==}
 
   '@iconify/tools@4.1.1':
     resolution: {integrity: sha512-Hybu/HGhv6T8nLQhiG9rKx+ekF7NNpPOEQAy7JRSKht3s3dcFSsPccYzk24Znc9MTxrR6Gak3cg6CPP5dyvS2Q==}
@@ -6081,7 +6081,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.1': {}
 
-  '@hunghg255/eslint-config@0.0.15(@typescript-eslint/eslint-plugin@8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2)':
+  '@hunghg255/eslint-config@0.0.16(@typescript-eslint/eslint-plugin@8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2))(eslint@9.16.0(jiti@2.3.3))(typescript@5.7.2)':
     dependencies:
       '@eslint-types/unicorn': 52.0.0
       '@eslint/js': 9.18.0
@@ -6623,10 +6623,6 @@ snapshots:
       vite: 5.4.11(@types/node@20.17.9)(sass@1.82.0)
     transitivePeerDependencies:
       - supports-color
-
-  acorn-jsx@5.3.2(acorn@8.13.0):
-    dependencies:
-      acorn: 8.13.0
 
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:
@@ -7814,8 +7810,8 @@ snapshots:
 
   espree@9.6.1:
     dependencies:
-      acorn: 8.13.0
-      acorn-jsx: 5.3.2(acorn@8.13.0)
+      acorn: 8.14.0
+      acorn-jsx: 5.3.2(acorn@8.14.0)
       eslint-visitor-keys: 3.4.3
 
   esquery@1.6.0:
@@ -8416,16 +8412,16 @@ snapshots:
   jotai-devtools@0.1.0(jotai@1.13.1)(react@19.0.0)(redux@5.0.1):
     dependencies:
       '@redux-devtools/extension': 3.3.0(redux@5.0.1)
-      jotai: 1.13.1(@babel/core@7.25.9)(@babel/template@7.25.9)(jotai-devtools@0.1.0)(react@19.0.0)
+      jotai: 1.13.1(@babel/core@7.26.0)(@babel/template@7.25.9)(jotai-devtools@0.1.0)(react@19.0.0)
       react: 19.0.0
     transitivePeerDependencies:
       - redux
 
-  jotai@1.13.1(@babel/core@7.25.9)(@babel/template@7.25.9)(jotai-devtools@0.1.0)(react@19.0.0):
+  jotai@1.13.1(@babel/core@7.26.0)(@babel/template@7.25.9)(jotai-devtools@0.1.0)(react@19.0.0):
     dependencies:
       react: 19.0.0
     optionalDependencies:
-      '@babel/core': 7.25.9
+      '@babel/core': 7.26.0
       '@babel/template': 7.25.9
       jotai-devtools: 0.1.0(jotai@1.13.1)(react@19.0.0)(redux@5.0.1)
 
@@ -8459,7 +8455,7 @@ snapshots:
 
   jsonc-eslint-parser@2.4.0:
     dependencies:
-      acorn: 8.13.0
+      acorn: 8.14.0
       eslint-visitor-keys: 3.4.3
       espree: 9.6.1
       semver: 7.6.3
