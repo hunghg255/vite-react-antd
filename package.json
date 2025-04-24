@@ -52,7 +52,7 @@
     "eslint": "^9.16.0",
     "esno": "^4.8.0",
     "git-scm-hooks": "^0.2.0",
-    "lint-staged": "^15.4.1",
+    "nano-staged": "^0.8.0",
     "react-generate-pages": "^0.0.1",
     "rollup-plugin-visualizer": "^5.12.0",
     "sass": "^1.82.0",
@@ -75,10 +75,10 @@
     "not op_mini all"
   ],
   "git-hooks": {
-    "pre-commit": "npx lint-staged",
+    "pre-commit": "nano-staged",
     "commit-msg": "npm run verify-commit"
   },
-  "lint-staged": {
-    "*": "eslint --fix src"
+  "nano-staged": {
+    "*": "eslint src --fix"
   }
 }
